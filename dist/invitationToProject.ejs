@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>User Invite</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; background-color: #F0F4F7;">
+<style>
+    body {
+        font-family: 'Roboto', 'Arial', sans-serif;
+    }
+</style>
+<div style="width: 100%; margin: 0 auto; padding: 0;  background-color: #F0F4F7;">
+    <div style="max-width: 674px; margin-left: auto; margin-top: 0; margin-right: auto; margin-bottom: 0;">
+        <table border="0" cellpadding="0" cellspacing="0"
+               style="padding: 0;background-color: #F0F4F7;padding-top: 34px;padding-bottom: 78px;" width="100%">
+            <thead>
+                <tr>
+                    <th align="center" style="padding-bottom: 42px;">
+                        <img alt="" src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/blue-logo-with-black-text-transparent.png" width="137px" height="22px" style="margin-right: 10px">
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="background: #ffffff; color: #52565F;">
+            <tr>
+                <td align="center" style="padding-left: 40px; padding-right: 40px; line-height: 23px; font-size: 16px; padding-top: 37px; padding-bottom: 20px; font-weight: 400;">
+                    Hi!
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-left: 40px; padding-right: 40px; line-height: 23px; font-size: 14px; padding-bottom: 14px; font-weight: 400;">
+                    <%=data["owner"] %> invited you to collaborate on <%=data["project"]%> using FlowMapp.
+                </td>
+            </tr>
+            <tr>
+                <td align="center"
+                    style="padding-left: 40px;padding-right: 40px;padding-top: 33px; padding-bottom: 30px;">
+                    <img alt="" src="<%=data["img"]%>" width="278px" height="184px" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td align="center"
+                    style="padding-left: 40px;padding-right: 40px;padding-top: 10px; padding-bottom: 10px;">
+                    <a href="<%=data["projectLink"]%>" target="_blank"
+                       style="padding: 10px 45px 10px 45px;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 16px;text-align: center;height: 41px;width: 160px;border: 1px solid #4D96E0;border-radius: 3px;background-color: #58A8F7;box-shadow: 0 1px 2px 0 rgba(140, 155, 170, 0.3);text-decoration: none;">Join the Project</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-top: 32px;padding-left: 40px;padding-right: 40px;line-height: 19px;font-size: 14px;color: #52565F;padding-bottom: 35px;">
+                    <span style="font-weight: 400">Have a nice day,</span><br>
+                    The FlowMapp team
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="font-weight: 400;line-height: 19px;font-size: 14px;color: #52565F;">
+                    <div style="border-bottom: 1px solid #DEE7EC;width: 100%;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"
+                    style="padding-left: 40px;padding-right: 40px;max-width: 218px;line-height: 19px;font-size: 12px;color: rgba(140, 155, 170, 0.7);padding-top: 20px;padding-bottom: 15px;">
+                    FlowMapp is the visual sitemap tool that help you more effectively planning website development and
+                    collaborate with others.
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-left: 40px;padding-right: 40px;line-height: 19px;font-size: 14px;color: #4D96E0;padding-bottom: 25px;">
+                    <a href="https://help.flowmapp.com/" target="_blank" style="font-size: 14px;color: #4D96E0; text-decoration: none;">Help Center</a>
+                    <span style="display: inline-block; border-width: 1px; border-color: #4D96E0; border-style: solid; border-radius: 50%; width: 1px; height: 1px; vertical-align: middle; margin-left: 5px; margin-right: 5px;"></span>
+                    <a href="https://flowmapp.com/privacy/" target="_blank" style="font-size: 14px;color: #4D96E0; text-decoration: none;">Privacy Policy</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"
+                    style="padding-left: 40px;padding-right: 40px;font-weight: 400;line-height: 19px;font-size: 14px;color: #52565F;padding-bottom: 35px;">
+                    <a href="https://www.facebook.com/flowmapp/" target="_blank"
+                       style="margin-left: 5px;margin-right: 5px;"><img alt=""
+                            src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/fb.png" width="34px"
+                            height="34px"></a>
+                    <a href="https://twitter.com/flowmapp" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img alt=""
+                            src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/twitter.png" width="34px"
+                            height="34px"></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
