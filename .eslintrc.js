@@ -6,6 +6,7 @@ module.exports = {
   extends: ['airbnb', 'prettier'],
   rules: {
     'max-len': ['error', { code: 120 }],
+    'react/jsx-props-no-spreading': 'off',
   },
   settings: {
     'import/resolver': {

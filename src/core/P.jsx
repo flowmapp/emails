@@ -15,5 +15,5 @@ const s = {
 }
 
 export default function main(props) {
-  return <p style={s.p}>{props.children}</p>
+  return <p style={{ ...s.p, ...props.style }}>{props.children}</p>
 }

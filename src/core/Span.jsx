@@ -14,5 +14,5 @@ const s = {
 }
 
 export default function main(props) {
-  return <span style={s.span}>{props.children}</span>
+  return <span style={{ ...s.span, ...props.style }}>{props.children}</span>
 }
