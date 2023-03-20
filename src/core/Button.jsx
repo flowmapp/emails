@@ -2,7 +2,7 @@ import React from 'react'
 
 import { colors, fontDefaults } from '@const'
 
-import { A } from '@components'
+import { A } from '@core'
 
 const s = {
   a: {

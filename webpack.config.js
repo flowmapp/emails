@@ -62,7 +62,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@core': path.resolve(__dirname, 'src/core'),
       '@const': path.resolve(__dirname, 'src/const'),
       '@layouts': path.resolve(__dirname, 'src/layouts/'),
       '@static': path.resolve(__dirname, 'static/'),

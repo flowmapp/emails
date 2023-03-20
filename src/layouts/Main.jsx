@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { A, Image, Span } from '@components'
+import { A, Image, Span } from '@core'
 
 import dottedBackground from '@static/common/dottedBackground.jpg'
 import instagram from '@static/common/instagram.png'

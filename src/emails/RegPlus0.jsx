@@ -2,7 +2,7 @@ import React from 'react'
 
 import Main from '@layouts/Main'
 
-import { A, Button, H2, Hero, Image, P } from '@components'
+import { A, Button, H2, Hero, Image, P } from '@core'
 
 import sitemap from '@static/regPlus0/sitemap.png'
 import video from '@static/regPlus0/video.png'
