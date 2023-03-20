@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "aws-sdk": "^2.1338.0",
     "babel-loader": "^8.2.3",
     "babel-preset-react-app": "^10.0.1",
     "dotenv": "^16.0.3",
@@ -22,7 +23,8 @@
     "webpack-dev-server": "^4.6.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "upload": "node src/utils/S3Upload.js"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",
