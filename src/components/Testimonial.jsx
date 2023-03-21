@@ -2,16 +2,11 @@ import React from 'react'
 
 import { Image, P, Span } from '@core'
 
+import Card from '@components/Card'
+
 import { colors, fontDefaults } from '@const'
 
 const s = {
-  card: {
-    backgroundColor: colors.white,
-    borderRadius: 12,
-    boxShadow: '0px 0px 20px #eee',
-    padding: 24,
-    marginBottom: 20,
-  },
   top: {
     display: 'table',
     width: '100%',
@@ -59,7 +54,7 @@ const s = {
 
 export default function main(props) {
   return (
-    <div style={s.card}>
+    <Card>
       <div style={s.top}>
         <div style={s.left}>
           <Span style={s.name}>{props.name}</Span>
@@ -83,6 +78,6 @@ export default function main(props) {
           ))}
         </div>
       ) : null}
-    </div>
+    </Card>
   )
 }

@@ -5,6 +5,7 @@ import { fontDefaults } from '@const'
 const s = {
   p: {
     ...fontDefaults,
+    marginTop: 0,
     marginBottom: 24,
     fontSize: 14,
     fontWeight: 400,
