@@ -4,8 +4,8 @@ import { contentPadding } from '@const'
 
 const s = {
   hero: {
-    marginLeft: -contentPadding,
-    marginRight: -contentPadding,
+    paddingLeft: contentPadding,
+    paddingRight: contentPadding,
   },
 }
 

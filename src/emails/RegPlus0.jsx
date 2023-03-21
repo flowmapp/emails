@@ -2,7 +2,7 @@ import React from 'react'
 
 import Main from '@layouts/Main'
 
-import { A, Button, H2, Hero, Image, P } from '@core'
+import { A, Button, Container, H2, Image, P } from '@core'
 
 import sitemap from '@static/regPlus0/sitemap.png'
 import video from '@static/regPlus0/video.png'
@@ -18,24 +18,24 @@ export default function main(props) {
 
   return (
     <Main preview={props.preview}>
-      <H2>Give five, {name} 👋</H2>
-      <P>
-        Meet the superpower and smart FlowMapp tools.
-        <br />
-        Create sitemaps, plan information architecture, make wireframes in the most easiest way. Go
-        with the Flow
-      </P>
-      <Button href="/personal">
-        Let&apos;s rock!
-      </Button>
-      <Hero>
-        <Image src={sitemap} alt="sitemap" />
-      </Hero>
-      <H2>FlowMapp in 1 minute</H2>
-      <A style={s.video} href="https://youtu.be/QiGHRP9t400">
-        <Image src={video} alt="sitemap" />
-      </A>
-      <Button href="https://youtu.be/QiGHRP9t400">Watch Video</Button>
+      <Container>
+        <H2>Give five, {name} 👋</H2>
+        <P>
+          Meet the superpower and smart FlowMapp tools.
+          <br />
+          Create sitemaps, plan information architecture, make wireframes in the most easiest way.
+          Go with the Flow
+        </P>
+        <Button href="/personal">Let&apos;s rock!</Button>
+      </Container>
+      <Image src={sitemap} alt="sitemap" />
+      <Container>
+        <H2>FlowMapp in 1 minute</H2>
+        <A style={s.video} href="https://youtu.be/QiGHRP9t400">
+          <Image src={video} alt="sitemap" />
+        </A>
+        <Button href="https://youtu.be/QiGHRP9t400">Watch Video</Button>
+      </Container>
     </Main>
   )
 }

@@ -32,7 +32,7 @@ const s = {
     backgroundPositionY: 10,
     backgroundSize: 39,
     backgroundRepeat: 'repeat',
-    padding: contentPadding,
+    paddingTop: contentPadding,
     marginBottom: 48,
     borderRadius: 32,
     textAlign: 'center',
@@ -83,7 +83,7 @@ export default function main(props) {
             >
               <Image style={s.logo} src={logo} alt="logo" />
             </A>
-            <div style={s.content}>{props.children}</div>
+            <div style={{ ...s.content, ...props.style }}>{props.children}</div>
             <div style={s.socials}>
               {renderSocial({ href: 'https://twitter.com/flowmapp', img: twitter, alt: 'twitter' })}
               {renderSocial({ href: 'https://medium.com/@flowmapp', img: medium, alt: 'medium' })}

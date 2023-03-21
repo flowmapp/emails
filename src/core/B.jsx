@@ -9,5 +9,5 @@ const s = {
 }
 
 export default function main(props) {
-  return <b style={s.b}>{props.children}</b>
+  return <b style={{ ...s.b, ...props.style }}>{props.children}</b>
 }
