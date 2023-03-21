@@ -13,7 +13,7 @@ import { colors, contentPadding, fontDefaults } from '@const'
 
 const s = {
   body: {
-    width: 840,
+    width: '100%',
     backgroundColor: colors.white,
     paddingTop: 48,
     paddingBottom: 100,
