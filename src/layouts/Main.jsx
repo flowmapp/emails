@@ -2,7 +2,6 @@ import React from 'react'
 
 import { A, Image, Span } from '@core'
 
-import dottedBackground from '@static/common/dottedBackground.jpg'
 import instagram from '@static/common/instagram.png'
 import linkedin from '@static/common/linkedin.png'
 import logo from '@static/common/logo.png'
@@ -27,10 +26,9 @@ const s = {
     boxSizing: 'content-box',
   },
   content: {
-    backgroundImage: `url(${dottedBackground})`,
-    backgroundPositionX: 10,
-    backgroundPositionY: 10,
-    backgroundSize: 39,
+    backgroundColor: '#f7f8fa',
+    backgroundImage: 'radial-gradient(#b2b2b2 1px, transparent 2px)',
+    backgroundSize: '40px 40px',
     backgroundRepeat: 'repeat',
     paddingTop: contentPadding,
     marginBottom: 48,
