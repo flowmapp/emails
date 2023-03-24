@@ -6,8 +6,8 @@ import { colors } from '@const'
 
 import { B, Button, Container, H2, Span } from '@core'
 
-import bottomArrow from '@static/regPlus6/bottomArrow.png'
-import topArrow from '@static/regPlus6/topArrow.png'
+import bottomArrow from '@static/regPlus7/bottomArrow.png'
+import topArrow from '@static/regPlus7/topArrow.png'
 
 const s = {
   main: {
