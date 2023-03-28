@@ -31,7 +31,10 @@ export default function main(props) {
       <Image src={sitemap} alt="sitemap" />
       <Container>
         <H2>FlowMapp in 1 minute</H2>
-        <A style={s.video} href="https://youtu.be/QiGHRP9t400">
+        <A
+          style={s.video}
+          href="https://help.flowmapp.com/help/getting-started/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
+        >
           <Image src={video} alt="sitemap" />
         </A>
         <Button href="https://youtu.be/QiGHRP9t400">Watch Video</Button>
