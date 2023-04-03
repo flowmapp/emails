@@ -37,7 +37,9 @@ export default function main(props) {
         >
           <Image src={video} alt="sitemap" />
         </A>
-        <Button href="https://youtu.be/QiGHRP9t400">Watch Video</Button>
+        <Button href="https://help.flowmapp.com/help/getting-started/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%">
+          Watch Video
+        </Button>
       </Container>
     </Main>
   )
