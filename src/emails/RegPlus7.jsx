@@ -78,7 +78,7 @@ export default function main(props) {
           <i>
             Upgrade your planning skills,&nbsp;
             <B style={s.span}>
-              increase profits and just enjoy a limited 75% discount on FlowMapp PRO
+              increase profits and just enjoy a limited 25% discount on FlowMapp PRO
             </B>
           </i>
         </H2>
