@@ -40,7 +40,7 @@ const s = {
 export default function main(props) {
   const chipRows = [
     [
-      { linkText: 'Check out', text: 'Demo Project', href: '/personal' },
+      { linkText: 'Check out', text: 'Demo Project', href: '/share/projects/215285' },
       { linkText: 'Create Sitemap', text: 'using templates', href: '/personal' },
     ],
     [
