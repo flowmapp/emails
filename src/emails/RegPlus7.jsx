@@ -89,7 +89,7 @@ export default function main(props) {
             <div style={s.dot} />
           </div>
         </div>
-        <Button style={s.button} href="https://app.flowmapp.com/updateplan?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%">
+        <Button style={s.button} href="/upgrade">
           Activate
         </Button>
       </Container>

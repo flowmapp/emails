@@ -82,10 +82,7 @@ export default function main(props) {
             planning. Follow the steps to achieve the goal
           </P>
           <Checklist items={checklistItems} />
-          <Button
-            style={s.button}
-            href="https://app.flowmapp.com/personal?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
-          >
+          <Button style={s.button} href="/personal">
             Rock them all!
           </Button>
         </Card>
