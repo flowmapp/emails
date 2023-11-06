@@ -85,7 +85,7 @@ export default function main(props) {
         <div style={s.promoWrapper}>
           <Span style={s.title}>Your promo code</Span>
           <div style={s.promo}>
-            <Span style={s.code}>FlowPRO</Span>
+            <Span style={s.code}>flowPRO</Span>
             <div style={s.dot} />
           </div>
         </div>
