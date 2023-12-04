@@ -7,5 +7,6 @@ const s = {
 }
 
 export default function main(props) {
-  return <img style={{ ...s.img, borderRadius: props.borderRadius }} {...props} />
+  const { borderRadius, ...rest } = props
+  return <img style={{ ...s.img, borderRadius }} {...rest} />
 }

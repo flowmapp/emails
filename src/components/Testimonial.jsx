@@ -72,7 +72,7 @@ export default function main(props) {
       {props.hashtags ? (
         <div style={s.hashtags}>
           {props.hashtags.map((hashtag) => (
-            <Span style={s.hashtag}>
+            <Span key={s.hashtag} style={s.hashtag}>
               #{hashtag}
             </Span>
           ))}

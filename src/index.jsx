@@ -49,7 +49,7 @@ const main = async () => {
       <a style={{ ...s.sideButton, left: 0 }} href="/">
         Back
       </a>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>,
   )
 }

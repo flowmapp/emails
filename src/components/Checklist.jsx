@@ -57,7 +57,7 @@ export default function main(props) {
       {props.items.map((item) => {
         const itemStyle = item.checked ? { ...s.item, ...s.checked } : s.item
         return (
-          <div style={itemStyle}>
+          <div key={item.title} style={itemStyle}>
             <div style={s.checkbox}>{item.checked ? <div style={s.checkmark} /> : null}</div>
             <div style={s.content}>
               <Span style={s.title}>{item.title}</Span>

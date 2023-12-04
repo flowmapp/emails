@@ -51,7 +51,7 @@ export default function main(props) {
   ]
 
   const renderChipRow = (chipRow) => (
-    <div style={s.chipRow}>
+    <div key={Math.random()} style={s.chipRow}>
       {chipRow.map((chip) => (
         <Chip key={chip.text}>
           <B>
