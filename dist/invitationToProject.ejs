@@ -1,95 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>User Invite</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-</head>
-<body style="margin: 0; padding: 0; background-color: #F0F4F7;">
-<style>
-    body {
-        font-family: 'Roboto', 'Arial', sans-serif;
-    }
-</style>
-<div style="width: 100%; margin: 0 auto; padding: 0;  background-color: #F0F4F7;">
-    <div style="max-width: 674px; margin-left: auto; margin-top: 0; margin-right: auto; margin-bottom: 0;">
-        <table border="0" cellpadding="0" cellspacing="0"
-               style="padding: 0;background-color: #F0F4F7;padding-top: 34px;padding-bottom: 78px;" width="100%">
-            <thead>
-                <tr>
-                    <th align="center" style="padding-bottom: 42px;">
-                        <img alt="" src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/blue-logo-with-black-text-transparent.png" width="137px" height="22px" style="margin-right: 10px">
-                    </th>
-                </tr>
-            </thead>
-            <tbody style="background: #ffffff; color: #52565F;">
-            <tr>
-                <td align="center" style="padding-left: 40px; padding-right: 40px; line-height: 23px; font-size: 16px; padding-top: 37px; padding-bottom: 20px; font-weight: 400;">
-                    Hi!
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="padding-left: 40px; padding-right: 40px; line-height: 23px; font-size: 14px; padding-bottom: 14px; font-weight: 400;">
-                    <%=data["owner"] %> invited you to collaborate on <%=data["project"]%> using FlowMapp.
-                </td>
-            </tr>
-            <tr>
-                <td align="center"
-                    style="padding-left: 40px;padding-right: 40px;padding-top: 33px; padding-bottom: 30px;">
-                    <img alt="" src="<%=data["img"]%>" width="278px" height="184px" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td align="center"
-                    style="padding-left: 40px;padding-right: 40px;padding-top: 10px; padding-bottom: 10px;">
-                    <a href="<%=data["projectLink"]%>" target="_blank"
-                       style="padding: 10px 45px 10px 45px;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: 400;line-height: 16px;text-align: center;height: 41px;width: 160px;border: 1px solid #4D96E0;border-radius: 3px;background-color: #58A8F7;box-shadow: 0 1px 2px 0 rgba(140, 155, 170, 0.3);text-decoration: none;">Join the Project</a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="padding-top: 32px;padding-left: 40px;padding-right: 40px;line-height: 19px;font-size: 14px;color: #52565F;padding-bottom: 35px;">
-                    <span style="font-weight: 400">Have a nice day,</span><br>
-                    The FlowMapp team
-                </td>
-            </tr>
-            <tr>
-                <td align="left" style="font-weight: 400;line-height: 19px;font-size: 14px;color: #52565F;">
-                    <div style="border-bottom: 1px solid #DEE7EC;width: 100%;"></div>
-                </td>
-            </tr>
-            <tr>
-                <td align="center"
-                    style="padding-left: 40px;padding-right: 40px;max-width: 218px;line-height: 19px;font-size: 12px;color: rgba(140, 155, 170, 0.7);padding-top: 20px;padding-bottom: 15px;">
-                    FlowMapp is the visual sitemap tool that help you more effectively planning website development and
-                    collaborate with others.
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="padding-left: 40px;padding-right: 40px;line-height: 19px;font-size: 14px;color: #4D96E0;padding-bottom: 25px;">
-                    <a href="https://help.flowmapp.com/" target="_blank" style="font-size: 14px;color: #4D96E0; text-decoration: none;">Help Center</a>
-                    <span style="display: inline-block; border-width: 1px; border-color: #4D96E0; border-style: solid; border-radius: 50%; width: 1px; height: 1px; vertical-align: middle; margin-left: 5px; margin-right: 5px;"></span>
-                    <a href="https://flowmapp.com/privacy/" target="_blank" style="font-size: 14px;color: #4D96E0; text-decoration: none;">Privacy Policy</a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center"
-                    style="padding-left: 40px;padding-right: 40px;font-weight: 400;line-height: 19px;font-size: 14px;color: #52565F;padding-bottom: 35px;">
-                    <a href="https://www.facebook.com/flowmapp/" target="_blank"
-                       style="margin-left: 5px;margin-right: 5px;"><img alt=""
-                            src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/fb.png" width="34px"
-                            height="34px"></a>
-                    <a href="https://twitter.com/flowmapp" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img alt=""
-                            src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/twitter.png" width="34px"
-                            height="34px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-</body>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" />
+    <style>
+      style {
+        display: none;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table style="width:100%;background-color:#fff;padding-top:48px;padding-bottom:100px">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:none" href="https://www.flowmapp.com/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">
+              <img style="width:152px;margin-bottom:28px;box-sizing:content-box" src="https://d36chyjq7xz7zh.cloudfront.net/common/logo.png" alt="logo" />
+            </a>
+            <div style="background-color:#f7f8fa;background-size:40px 40px;background-repeat:repeat;padding-top:60px;margin-bottom:48px;border-radius:32px;text-align:center;max-width:600px;padding-bottom:16px">
+              <div style="padding-left:60px;padding-right:60px">
+                <p style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;margin-top:0;margin-bottom:24px;font-size:14px;font-weight:400;line-height:22px;letter-spacing:0;text-align:center"><%=data["owner"]%> invited you to collaborate on <%=data["project"]%> using FlowMapp.</p>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#fff;display:inline-block;float:none;background-color:#0080ff;padding:12px 34px;border-radius:8px;margin-bottom:8px;font-size:16px" href="<%=data["projectLink"]%>" target="_blank" rel="noreferrer">Join the Project</a>
+                <p style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;margin-top:0;margin-bottom:24px;font-size:14px;font-weight:400;line-height:22px;letter-spacing:0;text-align:center">Have a nice day,<br />The FlowMapp team</p>
+              </div>
+            </div>
+            <div style="display:table;margin-bottom:48px">
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://twitter.com/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/twitter.png" alt="twitter" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://medium.com/@flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/medium.png" alt="medium" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://linkedin.com/company/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/linkedin.png" alt="linkedin" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://instagram.com/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/instagram.png" alt="instagram" />
+              </a>
+            </div>
+            <div>
+              <div style="margin-bottom:24px">
+                <span style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;font-size:12px;font-weight:400;line-height:14px;text-align:center">Over 300,000 makers use FlowMapp to create amazing products.</span>
+              </div>
+              <div style="display:table">
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="https://help.flowmapp.com/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">Help Center</a>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="https://flowmapp.com/privacy/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="<%=data["unsubscribeLink"]%>" target="_blank" rel="noreferrer">Unsubscribe</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
 </html>
