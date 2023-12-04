@@ -2,11 +2,12 @@ import React from 'react'
 
 import { A, Image, Span } from '@core'
 
-import instagram from '@static/common/instagram.png'
-import linkedin from '@static/common/linkedin.png'
+import instagram from '@static/common/instagram.svg'
+import linkedin from '@static/common/linkedin.svg'
 import logo from '@static/common/logo.png'
-import medium from '@static/common/medium.png'
-import twitter from '@static/common/twitter.png'
+import medium from '@static/common/medium.svg'
+import twitter from '@static/common/twitter.svg'
+import youTube from '@static/common/youtube.svg'
 
 import { colors, contentPadding, fontDefaults } from '@const'
 
@@ -84,6 +85,7 @@ export default function main(props) {
             <div style={{ ...s.content, ...props.style }}>{props.children}</div>
             <div style={s.socials}>
               {renderSocial({ href: 'https://twitter.com/flowmapp', img: twitter, alt: 'twitter' })}
+              {renderSocial({ href: 'https://www.youtube.com/@FlowMapp', img: youTube, alt: 'YouTube' })}
               {renderSocial({ href: 'https://medium.com/@flowmapp', img: medium, alt: 'medium' })}
               {renderSocial({
                 href: 'https://linkedin.com/company/flowmapp',
