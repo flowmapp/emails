@@ -1,9 +1,10 @@
 {
   "name": "emails",
-  "version": "2.10.0",
+  "version": "3.4.0",
   "private": true,
   "dependencies": {},
   "scripts": {
+    "build": "node build.js",
     "dev": "webpack-dev-server",
     "upload": "node src/utils/S3Upload.js"
   },
@@ -25,6 +26,7 @@
     "html-webpack-plugin": "^5.5.1",
     "prettier": "^2.8.8",
     "pretty": "^2.0.0",
+    "puppeteer": "^21.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",

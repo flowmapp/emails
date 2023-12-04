@@ -8,7 +8,7 @@ export default async () => {
   const routes = [{ path: '/', element: <Home /> }]
   // eslint-disable-next-line no-restricted-syntax
   for (const filename of emails) {
-    // eslint-disable-next-line global-require
+    // eslint-disable-next-line global-require, no-await-in-loop, import/no-dynamic-require
     const Component = await require(`../emails/${filename}`).default
 
     routes.push({

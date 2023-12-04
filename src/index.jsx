@@ -8,6 +8,8 @@ import getRouteComponent from '@utils/getRouteComponent'
 import makeRoutesFromEmails from '@utils/makeRoutesFromEmails'
 import renderEmail from '@utils/renderEmail'
 
+import HTML from './HTML'
+
 const main = async () => {
   const routes = await makeRoutesFromEmails()
   const router = createBrowserRouter(routes)
@@ -24,6 +26,7 @@ const main = async () => {
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#777',
+      flexDirection: 'column',
     },
     sideButton: {
       ...fontDefaults,
@@ -48,7 +51,12 @@ const main = async () => {
       <a style={{ ...s.sideButton, left: 0 }} href="/">
         Back
       </a>
-      <RouterProvider router={router} />
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <RouterProvider router={router} />
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <HTML />
+      </div>
     </div>,
   )
 }
