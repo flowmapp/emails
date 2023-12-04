@@ -10,58 +10,58 @@ import twitter from '@static/common/twitter.png'
 
 import { colors, contentPadding, fontDefaults } from '@const'
 
-const s = {
-  body: {
-    width: '100%',
-    backgroundColor: colors.white,
-    paddingTop: 48,
-    paddingBottom: 100,
-  },
-  logoLink: {
-    float: 'none',
-  },
-  logo: {
-    width: 152,
-    marginBottom: 28,
-    boxSizing: 'content-box',
-  },
-  content: {
-    backgroundColor: '#f7f8fa',
-    backgroundImage: 'radial-gradient(#b2b2b2 1px, transparent 2px)',
-    backgroundSize: '40px 40px',
-    backgroundRepeat: 'repeat',
-    paddingTop: contentPadding,
-    marginBottom: 48,
-    borderRadius: 32,
-    textAlign: 'center',
-    maxWidth: 600,
-    paddingBottom: 16,
-  },
-  socials: {
-    display: 'table',
-    marginBottom: 48,
-  },
-  social: {
-    float: 'left',
-    width: 36,
-    marginRight: 28,
-  },
-  footerSpan: {
-    marginBottom: 24,
-  },
-  footerLinks: {
-    display: 'table',
-  },
-  footerLink: {
-    ...fontDefaults,
-    color: '#bababa',
-    textDecoration: 'none',
-    marginRight: 16,
-    fontSize: 12,
-  },
-}
-
 export default function main(props) {
+  const s = {
+    body: {
+      width: '100%',
+      backgroundColor: colors.white,
+      paddingTop: 48,
+      paddingBottom: 100,
+    },
+    logoLink: {
+      float: 'none',
+    },
+    logo: {
+      width: 152,
+      marginBottom: 28,
+      boxSizing: 'content-box',
+    },
+    content: {
+      backgroundColor: '#f7f8fa',
+      backgroundImage: props.noImage ? undefined : 'radial-gradient(#b2b2b2 1px, transparent 2px)',
+      backgroundSize: '40px 40px',
+      backgroundRepeat: 'repeat',
+      paddingTop: contentPadding,
+      marginBottom: 48,
+      borderRadius: 32,
+      textAlign: 'center',
+      maxWidth: 600,
+      paddingBottom: 16,
+    },
+    socials: {
+      display: 'table',
+      marginBottom: 48,
+    },
+    social: {
+      float: 'left',
+      width: 36,
+      marginRight: 28,
+    },
+    footerSpan: {
+      marginBottom: 24,
+    },
+    footerLinks: {
+      display: 'table',
+    },
+    footerLink: {
+      ...fontDefaults,
+      color: '#bababa',
+      textDecoration: 'none',
+      marginRight: 16,
+      fontSize: 12,
+    },
+  }
+
   const unsubscribeLink = props.preview ? '/unsubscribe' : '%%unsubscribeLink%%'
 
   const renderSocial = ({ href, img, alt }) => (
