@@ -1,191 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Trial is over</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body style="margin: 0; padding: 0; background-color: #E5E5E5;">
-<style>
-    body {
-        font-family: 'Helvetica', 'Arial', sans-serif;
-    }
-</style>
-<div style="width: 100%; margin: 0 auto; padding: 0;">
-    <table  border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 60px 0; background-color: #F0F4F7; border-spacing: 0;">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" />
+    <style>
+      style {
+        display: none;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table style="width:100%;background-color:#fff;padding-top:48px;padding-bottom:100px">
+      <tbody>
         <tr>
-            <td align="center">
-                <table  border="0" cellpadding="0" cellspacing="0" style="width: 560px; margin: 0 auto; padding: 0;  background-image: url(https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/mask_group-3.png); background-position: top center; background-repeat: no-repeat; background-color: #fff; border-spacing: 0; background-size: 100%;">
-                    <tr>
-                        <td align="center" style="padding: 40px 0;">
-                            <div>
-                                <a href="https://flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=on8" target="_blank">
-                                    <img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/fm_logo.png" alt="FlowMapp" width="110" height="17" style="width: 110px; height: 17px;">
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <div style="color: #FFFFFF; font-size: 34px; line-height: 48px; font-weight: 500; letter-spacing: -0.5px; text-align: center;">
-                                Your trial is almost over, <br> it expires tomorrow.
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="height: 340px"></td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <table  border="0" cellpadding="0" cellspacing="0" style="position: relative; width: 281px; height: 50px; margin: 0 auto; padding: 0; background-color: #0D87FF; border-spacing: 0;">
-                                <tr>
-                                    <td align="center">
-                                        <div style="width: 100%;">
-                                            <a href="<%=process.env.FRONTEND_BASE_URL%>/upgradeplan/?utm_source=email&utm_medium=email&utm_campaign=on8
-" target="_blank" style="display: block; line-height: 50px; color: #FFFFFF; font-weight: 500; font-size: 18px; text-decoration: none; font-feature-settings: 'pnum' on, 'lnum' on;">
-                                                Upgrade now
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
+          <td align="center">
+            <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:none" href="https://www.flowmapp.com/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">
+              <img style="width:152px;margin-bottom:28px;box-sizing:content-box" src="https://d36chyjq7xz7zh.cloudfront.net/common/logo.png" alt="logo" />
+            </a>
+            <div style="background-color:#f7f8fa;background-image:radial-gradient(#b2b2b2 1px, transparent 2px);background-size:40px 40px;background-repeat:repeat;padding-top:60px;margin-bottom:48px;border-radius:32px;text-align:center;max-width:600px;padding-bottom:16px">
+              <div style="padding-left:60px;padding-right:60px">
+                <p style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;margin-top:0;margin-bottom:24px;font-size:14px;font-weight:400;line-height:22px;letter-spacing:0;text-align:center">We hope you‘ve enjoyed the experience — take the next step in building your projects. Our UX tools are here to help you.<br />Learn more about <a href="https://flowmapp.com/pricing/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" color="blue" style="font-family:Roboto, sans-serif;text-decoration:none;color:#0080ff" target="_blank" rel="noreferrer">plans and pricing</a>.</p>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#fff;display:inline-block;float:none;background-color:#0080ff;padding:12px 34px;border-radius:8px;margin-bottom:8px;font-size:16px" href="<%=data["baseUrl"]%>/upgrade?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">Upgrade now</a>
+                <h2 style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;font-weight:900;font-size:42px;line-height:48px;margin:0;margin-bottom:20px;text-align:center">Have questions about upgrading?</h2>
+                <p style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;margin-top:0;margin-bottom:24px;font-size:14px;font-weight:400;line-height:22px;letter-spacing:0;text-align:center">
+                  <a href="https://help.flowmapp.com/faq_category/pricing/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" color="blue" style="font-family:Roboto, sans-serif;text-decoration:none;color:#0080ff" target="_blank" rel="noreferrer">Here are some answers</a>. Let us know if there‘s anything we can do and you need an extra week to explore more.
+                </p>
+                <p style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;margin-top:0;margin-bottom:24px;font-size:14px;font-weight:400;line-height:22px;letter-spacing:0;text-align:center">We‘ll be here when you‘re ready.</p>
+              </div>
+            </div>
+            <div style="display:table;margin-bottom:48px">
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://twitter.com/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/twitter.png" alt="twitter" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://medium.com/@flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/medium.png" alt="medium" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://linkedin.com/company/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/linkedin.png" alt="linkedin" />
+              </a>
+              <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#000;display:block;float:left;width:36px;margin-right:28px" href="https://instagram.com/flowmapp" target="_blank" rel="noreferrer">
+                <img style="max-width:100%" src="https://d36chyjq7xz7zh.cloudfront.net/common/instagram.png" alt="instagram" />
+              </a>
+            </div>
+            <div>
+              <div style="margin-bottom:24px">
+                <span style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;font-size:12px;font-weight:400;line-height:14px;text-align:center">Over 300,000 makers use FlowMapp to create amazing products.</span>
+              </div>
+              <div style="display:table">
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="https://help.flowmapp.com/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">Help Center</a>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="https://flowmapp.com/privacy/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=<%=data["utmCampaign"]%>" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a style="font-family:Roboto, sans-serif;text-decoration:none;color:#bababa;display:block;float:left;margin-right:16px;font-size:12px" href="<%=data["unsubscribeLink"]%>" target="_blank" rel="noreferrer">Unsubscribe</a>
+              </div>
+            </div>
+          </td>
         </tr>
-        <tr>
-            <td align="center">
-                <table  border="0" cellpadding="0" cellspacing="0" style="width: 560px; margin: 0 auto; padding: 0 0 40px; background-color: #ffffff; border-spacing: 0;">
-                    <tr>
-                        <td align="center" style="padding: 60px 0 32px">
-                            <div style="width: 440px; margin: 0 auto; color: #172131; font-feature-settings: 'pnum' on, 'lnum' on; font-size: 18px; line-height: 26px;">
-                                We hope you've enjoyed the experience — take the <br>
-                                next step in building your projects. Our UX tools <br>
-                                are here to help you. Learn more about <a href="https://flowmapp.com/pricing/?utm_source=email&utm_medium=email&utm_campaign=on8
-" target="_blank" style="color: #0D87FF; text-decoration: none;">plans and pricing.</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" style="padding: 0 0 32px">
-                            <div style="width: 440px; margin: 0 auto; color: #172132; letter-spacing: -0.5px; text-align: center; font-weight: 500; font-size: 34px; line-height: 48px;">
-                                Have questions about upgrading?
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" style="padding: 0 0 32px">
-                            <div style="width: 440px; margin: 0 auto; color: #172131; font-feature-settings: 'pnum' on, 'lnum' on; font-size: 18px; line-height: 26px;">
-                                Here are  <a href="https://flowmapp.com/faq_category/pricing/?utm_source=email&utm_medium=email&utm_campaign=on8" target="_blank" style="color: #0D87FF; text-decoration: none;">some answers</a>. Let us know if there's anything we can do and you need an extra week to explore more.
-                                <br><br>
-                                We'll be here when you're ready.
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; margin: 0 auto;">
-                    <tr>
-                        <td style="color: #283544; font-size: 12px; text-decoration: none; text-align: center; padding-top: 32px; padding-bottom: 17px;">
-                            Over 100 000 makers use FlowMapp to create amazing products.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table  border="0" cellpadding="0" cellspacing="0" style="width: 560px; margin: 0 auto; padding: 0; border-spacing: 0;">
-                                <tr>
-                                    <td>
-                                        <img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/accenture_logo.png" width="130" height="60" />
-                                    </td>
-                                    <td>
-                                        <img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/intel_logo.png" width="130" height="60" />
-                                    </td>
-                                    <td>
-                                        <img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/isobar_logo.png" width="130" height="60" />
-                                    </td>
-                                    <td>
-                                        <img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/pega_logo.png" width="130" height="60" />
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0"
-                                   style="width: 560px; margin: 0 auto; padding: 0; border-spacing: 0;">
-                                <tr>
-                                    <td align="center" style="padding: 19px 0 0;">
-                                        <table border="0" cellpadding="0" cellspacing="0"
-                                               style="margin: 0 auto; padding: 0; border-spacing: 0;">
-                                            <tr>
-                                                <td align="center" style="padding: 0; border-spacing: 0;">
-                                                    <a href="https://help.flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=on_f"
-                                                       target="_blank"
-                                                       style="color: #8C9BAA; font-size: 12px; text-decoration: none;">Help
-                                                        Center</a>
-                                                </td>
-                                                <td align="center" style="padding: 0 8px 0; border-spacing: 0;">
-                                            <span
-                                                    style="display: inline-block; vertical-align: middle; width: 8px; height: 8px;"><img
-                                                    src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/bullet.png" alt="" width="8" height="8"
-                                                    style="display: block; width: 8px; height: 8px;"></span>
-                                                </td>
-                                                <td align="center" style="padding: 0; border-spacing: 0;">
-                                                    <a href="https://flowmapp.com/blog/?utm_source=email&utm_medium=email&utm_campaign=on_f"
-                                                       target="_blank"
-                                                       style="color: #8C9BAA; font-size: 12px; text-decoration: none;">Design
-                                                        Talks</a>
-                                                </td>
-                                                <td align="center" style="padding: 0 8px 0; border-spacing: 0;">
-                                            <span
-                                                    style="display: inline-block; vertical-align: middle; width: 8px; height: 8px;"><img
-                                                    src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/bullet.png" alt="" width="8" height="8"
-                                                    style="display: block; width: 8px; height: 8px;"></span>
-                                                </td>
-                                                <td align="center" style="padding: 0; border-spacing: 0;">
-                                                    <a href="https://flowmapp.com/privacy/?utm_source=email&utm_medium=email&utm_campaign=on_f"
-                                                       target="_blank"
-                                                       style="color: #8C9BAA; font-size: 12px; text-decoration: none;">Privacy
-                                                        Policy</a>
-                                                </td>
-                                                <td align="center" style="padding: 0 8px 0; border-spacing: 0;">
-                                            <span
-                                                    style="display: inline-block; vertical-align: middle; width: 8px; height: 8px;"><img
-                                                    src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/bullet.png" alt="" width="8" height="8"
-                                                    style="display: block; width: 8px; height: 8px;"></span>
-                                                </td>
-                                                <td align="center" style="padding: 0 10px 0 0; border-spacing: 0;">
-                                                    <a href="https://www.facebook.com/flowmapp/" target="_blank"
-                                                       style="display: block; width: 24px; height: 24px;"><img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/fb.png"
-                                                                                                               alt="Facebook" width="24" height="24"
-                                                                                                               style="width: 24px; height: 24px;"></a>
-                                                </td>
-                                                <td align="center" style="padding: 0 0 0 10px; border-spacing: 0;">
-                                                    <a href="https://twitter.com/flowmapp/" target="_blank"
-                                                       style="display: block; width: 24px; height: 24px;"><img src="https://d1u3sq9cnvw6ka.cloudfront.net/image/src/assets/image/export/tw.png"
-                                                                                                               alt="Twitter" width="24" height="24"
-                                                                                                               style="width: 24px; height: 24px;"></a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        <tr>
+      </tbody>
     </table>
-</div>
-</body>
+  </body>
+
 </html>
