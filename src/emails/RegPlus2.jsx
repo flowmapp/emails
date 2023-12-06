@@ -76,7 +76,7 @@ export default function main(props) {
       </div>
       <Container>
         <Card style={s.card}>
-          <H2 style={s.cardTitle}>Get 50% discount</H2>
+          <H2 style={s.cardTitle}>Get 15% discount</H2>
           <P style={s.cardText}>
             Hi, Jedi. This is the beginning of your power path towards amazing UX, UI and IA
             planning. Follow the steps to achieve the goal
