@@ -2,12 +2,12 @@ import React from 'react'
 
 import { A, Image, Span } from '@core'
 
-import instagram from '@static/common/instagram.svg'
-import linkedin from '@static/common/linkedin.svg'
+import instagram from '@static/common/instagram.png'
+import linkedin from '@static/common/linkedin.png'
 import logo from '@static/common/logo.png'
-import medium from '@static/common/medium.svg'
-import twitter from '@static/common/twitter.svg'
-import youTube from '@static/common/youtube.svg'
+import medium from '@static/common/medium.png'
+import twitter from '@static/common/twitter.png'
+import youTube from '@static/common/youtube.png'
 
 import { colors, contentPadding, fontDefaults } from '@const'
 
