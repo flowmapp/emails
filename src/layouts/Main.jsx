@@ -67,7 +67,7 @@ export default function main(props) {
 
   const renderSocial = ({ href, img, alt }) => (
     <A style={s.social} href={href}>
-      <Image src={img} alt={alt} />
+      <Image src={`${img}?v=2`} alt={alt} />
     </A>
   )
 
