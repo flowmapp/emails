@@ -4,7 +4,6 @@ import Main from '@layouts/Main'
 
 import { A, Button, Container, H2, Image, P } from '@core'
 
-import sitemap from '@static/regPlus0/sitemap.png'
 import video from '@static/regPlus0/video.jpg'
 
 const s = {
@@ -28,9 +27,8 @@ export default function main(props) {
         </P>
         <Button href="/personal">Let&apos;s rock!</Button>
       </Container>
-      <Image src={sitemap} alt="sitemap" />
       <Container>
-        <H2>FlowMapp in 1 minute</H2>
+        <H2>FlowMapp in 2 minutes</H2>
         <A
           style={s.video}
           href="https://help.flowmapp.com/help/getting-started/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
