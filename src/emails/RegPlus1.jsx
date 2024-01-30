@@ -47,7 +47,6 @@ export default function main(props) {
       { linkText: 'Build', text: 'a few Userflows', href: '/personal' },
       { linkText: 'Build Wireframes', text: 'using Block Library', href: '/personal' },
     ],
-    [{ linkText: 'Pass the onboarding', text: 'to get a 75% bonus', href: '/personal' }],
   ]
 
   const renderChipRow = (chipRow) => (
