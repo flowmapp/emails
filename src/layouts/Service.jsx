@@ -6,7 +6,7 @@ export default function main(props) {
   const footerLinks = [
     ...commonFooterLinks,
     {
-      href: 'https://',
+      href: '/profile/notifications',
       title: 'Notification Settings',
     },
   ]
