@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import Marketing from '@layouts/Marketing'
 
 import { A, Button, Container, H2, Image, P } from '@core'
 
@@ -16,7 +16,7 @@ export default function main(props) {
   const name = props.preview ? 'John' : '%%name%%'
 
   return (
-    <Main preview={props.preview}>
+    <Marketing preview={props.preview}>
       <Container>
         <H2>Give five, {name} 👋</H2>
         <P>
@@ -39,6 +39,6 @@ export default function main(props) {
           Watch Video
         </Button>
       </Container>
-    </Main>
+    </Marketing>
   )
 }

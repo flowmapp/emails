@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import System from '@layouts/System'
 
 import { A, Button, Container, H2, P } from '@core'
 
 export default function main(props) {
   return (
-    <Main preview={props.preview}>
+    <System preview={props.preview}>
       <Container>
         <P>
           We hope you&lsquo;ve enjoyed the experience — take the next step in building your
@@ -39,6 +39,6 @@ export default function main(props) {
         </P>
         <P>We&lsquo;ll be here when you&lsquo;re ready.</P>
       </Container>
-    </Main>
+    </System>
   )
 }

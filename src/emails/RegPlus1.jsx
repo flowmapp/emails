@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import Marketing from '@layouts/Marketing'
 
 import { A, B, Button, Chip, Container, H2, Image, P } from '@core'
 
@@ -65,7 +65,7 @@ export default function main(props) {
   )
 
   return (
-    <Main preview={props.preview}>
+    <Marketing preview={props.preview}>
       <Container>
         <H2>
           Ready. Steady.&nbsp;<B>Flow</B>
@@ -96,6 +96,6 @@ export default function main(props) {
           Get started
         </Button>
       </Container>
-    </Main>
+    </Marketing>
   )
 }

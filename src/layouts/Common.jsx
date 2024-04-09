@@ -11,6 +11,17 @@ import youTube from '@static/common/youtube.png'
 
 import { colors, contentPadding, fontDefaults } from '@const'
 
+export const commonFooterLinks = [
+  {
+    href: 'https://help.flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%',
+    title: 'Help Center',
+  },
+  {
+    href: 'https://flowmapp.com/privacy/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%',
+    title: 'Privacy Policy',
+  },
+]
+
 export default function main(props) {
   const s = {
     body: {
@@ -85,7 +96,11 @@ export default function main(props) {
             <div style={{ ...s.content, ...props.style }}>{props.children}</div>
             <div style={s.socials}>
               {renderSocial({ href: 'https://twitter.com/flowmapp', img: twitter, alt: 'twitter' })}
-              {renderSocial({ href: 'https://www.youtube.com/@FlowMapp', img: youTube, alt: 'YouTube' })}
+              {renderSocial({
+                href: 'https://www.youtube.com/@FlowMapp',
+                img: youTube,
+                alt: 'YouTube',
+              })}
               {renderSocial({ href: 'https://medium.com/@flowmapp', img: medium, alt: 'medium' })}
               {renderSocial({
                 href: 'https://linkedin.com/company/flowmapp',
@@ -103,21 +118,11 @@ export default function main(props) {
                 <Span>Over 300,000 makers use FlowMapp to create amazing products.</Span>
               </div>
               <div style={s.footerLinks}>
-                <A
-                  style={s.footerLink}
-                  href="https://help.flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
-                >
-                  Help Center
-                </A>
-                <A
-                  style={s.footerLink}
-                  href="https://flowmapp.com/privacy/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
-                >
-                  Privacy Policy
-                </A>
-                <A style={s.footerLink} href={unsubscribeLink}>
-                  Unsubscribe
-                </A>
+                {props.footerLinks.map((link) => (
+                  <A style={s.footerLink} href={link.href}>
+                    {link.title}
+                  </A>
+                ))}
               </div>
             </div>
           </td>

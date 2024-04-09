@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import Marketing from '@layouts/Marketing'
 
 import { colors } from '@const'
 
@@ -71,7 +71,7 @@ const s = {
 
 export default function main(props) {
   return (
-    <Main preview={props.preview} style={s.main}>
+    <Marketing preview={props.preview} style={s.main}>
       <div style={s.topArrow} />
       <Container>
         <H2 style={s.heading}>
@@ -94,6 +94,6 @@ export default function main(props) {
         </Button>
       </Container>
       <div style={s.bottomArrow} />
-    </Main>
+    </Marketing>
   )
 }

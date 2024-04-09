@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import System from '@layouts/System'
 
 import { Button, Container, H2, P } from '@core'
 
@@ -11,7 +11,7 @@ export default function main(props) {
   const projectLink = props.preview ? 'https://app.flowmapp.com' : '%%projectLink%%'
 
   return (
-    <Main preview={props.preview} noImage>
+    <System preview={props.preview} noImage>
       <Container>
         <H2>Hi, {newOwner} 👋</H2>
         <P>
@@ -26,6 +26,6 @@ export default function main(props) {
           The FlowMapp team
         </P>
       </Container>
-    </Main>
+    </System>
   )
 }

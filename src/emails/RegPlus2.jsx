@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import Marketing from '@layouts/Marketing'
 
 import { contentPadding } from '@const'
 
@@ -66,7 +66,7 @@ export default function main(props) {
   ]
 
   return (
-    <Main preview={props.preview} style={s.main}>
+    <Marketing preview={props.preview} style={s.main}>
       <div style={s.headerWrapper}>
         <div style={s.header}>
           <H2 style={s.alignLeft}>
@@ -88,6 +88,6 @@ export default function main(props) {
         </Card>
       </Container>
       <div style={s.bottomArrow} />
-    </Main>
+    </Marketing>
   )
 }

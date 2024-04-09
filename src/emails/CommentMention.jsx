@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import Service from '@layouts/Service'
 
 import { A, Container, H2, P, Preview } from '@core'
 
@@ -12,7 +12,7 @@ export default function main(props) {
   const html = props.preview ? 'This is a comment' : '%%%html%%%'
 
   return (
-    <Main preview={props.preview} noImage>
+    <Service preview={props.preview} noImage>
       <Container>
         <H2>Hi, {toUsername} 👋</H2>
         <P>
@@ -32,6 +32,6 @@ export default function main(props) {
           The FlowMapp team
         </P>
       </Container>
-    </Main>
+    </Service>
   )
 }

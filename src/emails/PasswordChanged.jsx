@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Main from '@layouts/Main'
+import System from '@layouts/System'
 
 import { A, Container, H2, P } from '@core'
 
@@ -9,7 +9,7 @@ export default function main(props) {
   const email = props.preview ? 'john@flowmapp.com' : '%%email%%'
 
   return (
-    <Main preview={props.preview} noImage>
+    <System preview={props.preview} noImage>
       <Container>
         <H2>Hi, {name} 👋</H2>
         <P>The password for {email} has been successfully changed.</P>
@@ -28,6 +28,6 @@ export default function main(props) {
           The FlowMapp team
         </P>
       </Container>
-    </Main>
+    </System>
   )
 }
