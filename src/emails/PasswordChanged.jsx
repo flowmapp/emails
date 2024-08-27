@@ -2,31 +2,41 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { A, Container, H2, P } from '@core'
+import { Button, Card, Container, Gray, H2, ImageBlock, P, TextBlock } from '@core'
 
 export default function main(props) {
-  const name = props.preview ? 'John' : '%%name%%'
   const email = props.preview ? 'john@flowmapp.com' : '%%email%%'
 
   return (
     <System preview={props.preview} noImage>
       <Container>
-        <H2>Hi, {name} 👋</H2>
-        <P>The password for {email} has been successfully changed.</P>
+        <Card>
+          <ImageBlock>🔒</ImageBlock>
 
-        <P>
-          <span>Did&lsquo;t change your password? </span>
-          <A color="blue" href="https://flowmapp.com/contact-us/" inline>
+          <TextBlock>
+            <H2>
+              <Gray>The password for</Gray> {email} <Gray>has been successfully changed.</Gray>
+            </H2>
+          </TextBlock>
+
+          <Button wide href="https://app.flowmapp.com">
+            Go to flowmapp
+          </Button>
+        </Card>
+
+        <Card>
+          <TextBlock>
+            <H2>Didn&lsquo;t change the password?</H2>
+            <P>
+              Contact FlowMapp Support so we can make sure no one else is trying to access your
+              account.
+            </P>
+          </TextBlock>
+
+          <Button wide secondary href="/upgrade">
             Contact FlowMapp Support
-          </A>
-          <span> so we can make sure no one else is trying to access your account.</span>
-        </P>
-
-        <P>
-          Have a nice day,
-          <br />
-          The FlowMapp team
-        </P>
+          </Button>
+        </Card>
       </Container>
     </System>
   )

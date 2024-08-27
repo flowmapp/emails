@@ -4,28 +4,18 @@ import Marketing from '@layouts/Marketing'
 
 import { contentPadding } from '@const'
 
-import { BInverted, Button, Container, H2, P } from '@core'
+import { BInverted, Button, Card, Container, H2, P } from '@core'
 
-import Card from '@components/Card'
+import CardComponent from '@components/Card'
 import Checklist from '@components/Checklist'
-
-import topArrow from '@static/regPlus2/topArrow.png'
-import bottomArrow from '@static/regPlus2/bottomArrow.png'
 
 const s = {
   main: {
     paddingBottom: 0,
   },
-  headerWrapper: {
-    backgroundImage: `url(${topArrow})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right top',
-    backgroundSize: 160,
-    marginBottom: 48,
-  },
   header: {
-    width: '85%',
     paddingLeft: contentPadding,
+    marginBottom: 48,
   },
   alignLeft: {
     textAlign: 'left',
@@ -47,13 +37,6 @@ const s = {
   button: {
     width: '100%',
   },
-  bottomArrow: {
-    backgroundImage: `url(${bottomArrow})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom center',
-    backgroundSize: 100,
-    height: 190,
-  },
 }
 
 export default function main(props) {
@@ -67,27 +50,26 @@ export default function main(props) {
 
   return (
     <Marketing preview={props.preview} style={s.main}>
-      <div style={s.headerWrapper}>
+      <Card>
         <div style={s.header}>
           <H2 style={s.alignLeft}>
             Follow 5 easy steps and get a&nbsp;<BInverted style={s.stories}>bonus!</BInverted>
           </H2>
         </div>
-      </div>
-      <Container>
-        <Card style={s.card}>
-          <H2 style={s.cardTitle}>Get 15% discount!</H2>
-          <P style={s.cardText}>
-            Hi, Jedi. This is the beginning of your power path towards amazing UX, UI and IA
-            planning. Follow the steps to achieve the goal
-          </P>
-          <Checklist items={checklistItems} />
-          <Button style={s.button} href="/personal">
-            Rock them all!
-          </Button>
-        </Card>
-      </Container>
-      <div style={s.bottomArrow} />
+        <Container>
+          <CardComponent style={s.card}>
+            <H2 style={s.cardTitle}>Get 15% discount!</H2>
+            <P style={s.cardText}>
+              Hi, Jedi. This is the beginning of your power path towards amazing UX, UI and IA
+              planning. Follow the steps to achieve the goal
+            </P>
+            <Checklist items={checklistItems} />
+            <Button style={s.button} href="/personal">
+              Rock them all!
+            </Button>
+          </CardComponent>
+        </Container>
+      </Card>
     </Marketing>
   )
 }

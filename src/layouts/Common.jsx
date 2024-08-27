@@ -26,41 +26,31 @@ export default function main(props) {
   const s = {
     body: {
       width: '100%',
-      backgroundColor: colors.white,
-      paddingTop: 48,
-      paddingBottom: 100,
+      backgroundColor: colors.lightGray,
+      paddingTop: 32,
+    },
+    footer: {
+      marginBottom: 32,
     },
     logoLink: {
       float: 'none',
     },
     logo: {
-      width: 152,
-      marginBottom: 28,
+      width: 122,
+      marginBottom: 32,
       boxSizing: 'content-box',
     },
     content: {
-      backgroundColor: '#f7f8fa',
-      backgroundImage: props.noImage ? undefined : 'radial-gradient(#b2b2b2 1px, transparent 2px)',
-      backgroundSize: '40px 40px',
-      backgroundRepeat: 'repeat',
-      paddingTop: contentPadding,
-      marginBottom: 48,
-      borderRadius: 32,
-      textAlign: 'center',
       maxWidth: 600,
-      paddingBottom: 16,
     },
     socials: {
       display: 'table',
-      marginBottom: 48,
+      padding: '32px 0',
     },
     social: {
       float: 'left',
       width: 36,
       marginRight: 28,
-    },
-    footerSpan: {
-      marginBottom: 24,
     },
     footerLinks: {
       display: 'table',
@@ -91,7 +81,7 @@ export default function main(props) {
               style={s.logoLink}
               href="https://www.flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
             >
-              <Image style={s.logo} src={logo} alt="logo" />
+              <Image style={s.logo} src={`${logo}?v=1`} alt="logo" />
             </A>
             <div style={{ ...s.content, ...props.style }}>{props.children}</div>
             <div style={s.socials}>
@@ -114,12 +104,9 @@ export default function main(props) {
               })}
             </div>
             <div style={s.footer}>
-              <div style={s.footerSpan}>
-                <Span>Over 300,000 makers use FlowMapp to create amazing products.</Span>
-              </div>
               <div style={s.footerLinks}>
                 {props.footerLinks.map((link) => (
-                  <A style={s.footerLink} href={link.href}>
+                  <A key={link.title} style={s.footerLink} href={link.href}>
                     {link.title}
                   </A>
                 ))}

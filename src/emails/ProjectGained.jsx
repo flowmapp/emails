@@ -1,32 +1,37 @@
 import React from 'react'
 
-import Service from '@layouts/Service'
+import System from '@layouts/System'
 
-import { A, Container, H2, P } from '@core'
+import { Button, Card, Container, Gray, H2, Image, ImageBlock, TextBlock } from '@core'
+
+import user from '@static/common/user.png'
 
 export default function main(props) {
-  const owner = props.preview ? 'John' : '%%owner%%'
-  const by = props.preview ? 'Bob' : '%%by%%'
-  const project = props.preview ? 'Invision App' : '%%project%%'
+  const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
+  const actorAvatarUrl = props.preview ? user : '%%actorAvatarUrl%%'
+  const projectTitle = props.preview ? 'Invision App' : '%%projectTitle%%'
+  const projectLink = props.preview ? 'https://app.flowmapp.com' : '%%projectLink%%'
 
   return (
-    <Service preview={props.preview} noImage>
+    <System preview={props.preview} noImage>
       <Container>
-        <H2>Hi, {owner} 👋</H2>
-        <P>
-          <span>{by} has transferred project </span>
-          <A color="blue" href="https://app.flowmapp.com" inline>
-            {project}
-          </A>
-          <span> into your workspace</span>
-        </P>
+        <Card>
+          <ImageBlock>
+            <Image src={actorAvatarUrl} alt="avatar" />
+          </ImageBlock>
 
-        <P>
-          Just wanted you to know,
-          <br />
-          The FlowMapp team
-        </P>
+          <TextBlock>
+            <H2>
+              {actorFullName} <Gray>has transferred the project</Gray> {projectTitle}{' '}
+              <Gray>into your workspace</Gray>
+            </H2>
+          </TextBlock>
+
+          <Button wide href={projectLink}>
+            View in Flowmapp
+          </Button>
+        </Card>
       </Container>
-    </Service>
+    </System>
   )
 }

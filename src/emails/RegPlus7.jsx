@@ -4,22 +4,12 @@ import Marketing from '@layouts/Marketing'
 
 import { colors } from '@const'
 
-import { B, Button, Container, H2, Span } from '@core'
-
-import bottomArrow from '@static/regPlus7/bottomArrow.png'
-import topArrow from '@static/regPlus7/topArrow.png'
+import { B, Button, Card, Container, H2, Span } from '@core'
 
 const s = {
   main: {
     paddingTop: 24,
     paddingBottom: 0,
-  },
-  topArrow: {
-    backgroundImage: `url(${topArrow})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right top',
-    backgroundSize: 270,
-    height: 120,
   },
   heading: {
     marginBottom: 60,
@@ -60,40 +50,33 @@ const s = {
     paddingLeft: 48,
     paddingRight: 48,
   },
-  bottomArrow: {
-    backgroundImage: `url(${bottomArrow})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom center',
-    backgroundSize: 100,
-    height: 220,
-  },
 }
 
 export default function main(props) {
   return (
     <Marketing preview={props.preview} style={s.main}>
-      <div style={s.topArrow} />
-      <Container>
-        <H2 style={s.heading}>
-          <i>
-            Upgrade your planning skills,&nbsp;
-            <B style={s.span}>
-              increase profits and just enjoy a limited 15% discount on FlowMapp PRO
-            </B>
-          </i>
-        </H2>
-        <div style={s.promoWrapper}>
-          <Span style={s.title}>Your promo code</Span>
-          <div style={s.promo}>
-            <Span style={s.code}>flowPRO</Span>
-            <div style={s.dot} />
+      <Card>
+        <Container>
+          <H2 style={s.heading}>
+            <i>
+              Upgrade your planning skills,&nbsp;
+              <B style={s.span}>
+                increase profits and just enjoy a limited 15% discount on FlowMapp PRO
+              </B>
+            </i>
+          </H2>
+          <div style={s.promoWrapper}>
+            <Span style={s.title}>Your promo code</Span>
+            <div style={s.promo}>
+              <Span style={s.code}>flowPRO</Span>
+              <div style={s.dot} />
+            </div>
           </div>
-        </div>
-        <Button style={s.button} href="/upgrade">
-          Activate
-        </Button>
-      </Container>
-      <div style={s.bottomArrow} />
+          <Button wide style={s.button} href="/upgrade">
+            Activate
+          </Button>
+        </Container>
+      </Card>
     </Marketing>
   )
 }

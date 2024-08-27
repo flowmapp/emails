@@ -1,15 +1,16 @@
 export const colors = {
   black: '#000',
-  blue: '#0080ff',
-  gray: '#bababa',
-  lightGray: '#e0e0e0',
+  blue: '#0050ff',
+  gray: '#ebebeb',
+  lightGray: '#f5f5f5',
   white: '#fff',
 }
 
-export const contentPadding = 60
+export const contentPadding = 32
 
 export const fontDefaults = {
-  fontFamily: 'Roboto, sans-serif',
+  fontFamily: '"SF UI Display", Roboto, sans-serif',
   textDecoration: 'none',
   color: colors.black,
+  fontWeight: 300,
 }

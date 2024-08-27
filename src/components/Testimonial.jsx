@@ -18,14 +18,14 @@ const s = {
   },
   name: {
     ...fontDefaults,
-    color: colors.gray,
+    color: colors.black,
     fontSize: 14,
     lineHeight: '14px',
     letterSpacing: '-0.04em',
   },
   jobTitle: {
     ...fontDefaults,
-    color: colors.lightGray,
+    color: colors.black,
     fontSize: 14,
     lineHeight: '14px',
     letterSpacing: '-0.04em',
@@ -47,7 +47,7 @@ const s = {
   hashtag: {
     ...fontDefaults,
     fontSize: 12,
-    color: colors.gray,
+    color: colors.black,
     marginRight: 4,
   },
 }

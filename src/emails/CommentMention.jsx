@@ -2,35 +2,39 @@ import React from 'react'
 
 import Service from '@layouts/Service'
 
-import { A, Container, H2, P, Preview } from '@core'
+import { Button, Card, Container, Gray, H2, Image, ImageBlock, Preview, TextBlock } from '@core'
+
+import user from '@static/common/user.png'
 
 export default function main(props) {
-  const toUsername = props.preview ? 'John' : '%%toUsername%%'
-  const fromUsername = props.preview ? 'Bob' : '%%fromUsername%%'
-  const link = props.preview ? 'http://localhost:300' : '%%link%%'
+  const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
+  const actorAvatarUrl = props.preview ? user : '%%actorAvatarUrl%%'
+  const link = props.preview ? 'http://localhost:3000' : '%%link%%'
   const linkTitle = props.preview ? 'Invision App' : '%%linkTitle%%'
   const html = props.preview ? 'This is a comment' : '%%%html%%%'
 
   return (
     <Service preview={props.preview} noImage>
       <Container>
-        <H2>Hi, {toUsername} 👋</H2>
-        <P>
-          New comment posted in&nbsp;
-          <A inline href={link} color="blue">
-            {linkTitle}
-          </A>
-          <br />
-          By {fromUsername}
-        </P>
+        <Card>
+          <ImageBlock>
+            <Image src={actorAvatarUrl} alt="avatar" />
+          </ImageBlock>
 
-        <Preview>{html}</Preview>
+          <TextBlock>
+            <H2>
+              {actorFullName}
+              <Gray> mentioned you in </Gray>
+              {linkTitle}
+            </H2>
+          </TextBlock>
 
-        <P>
-          Have a nice day,
-          <br />
-          The FlowMapp team
-        </P>
+          <Preview>{html}</Preview>
+
+          <Button wide href={link}>
+            View in Flowmapp
+          </Button>
+        </Card>
       </Container>
     </Service>
   )

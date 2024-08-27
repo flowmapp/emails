@@ -9,18 +9,31 @@ const s = {
     ...fontDefaults,
     display: 'inline-block',
     backgroundColor: colors.blue,
-    padding: '12px 34px',
+    padding: '19px 32px',
     color: colors.white,
-    borderRadius: 8,
-    marginBottom: 8,
-    fontSize: 16,
-    float: 'none'
+    borderRadius: 16,
+    fontSize: 18,
+    fontWeight: 600,
+    float: 'none',
+    lineHeight: '26px',
+  },
+  secondary: {
+    color: colors.black,
+    backgroundColor: colors.gray,
   },
 }
 
 export default function main(props) {
   return (
-    <A style={{ ...s.a, ...props.style }} href={props.href}>
+    <A
+      style={{
+        ...s.a,
+        ...(props.secondary ? s.secondary : {}),
+        width: props.wide && '100%',
+        ...props.style,
+      }}
+      href={props.href}
+    >
       {props.children}
     </A>
   )

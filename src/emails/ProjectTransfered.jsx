@@ -2,29 +2,35 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { Button, Container, H2, P } from '@core'
+import { Button, Card, Container, Gray, H2, Image, ImageBlock, TextBlock } from '@core'
+
+import user from '@static/common/user.png'
 
 export default function main(props) {
-  const newOwner = props.preview ? 'John' : '%%newOwner%%'
-  const oldOwner = props.preview ? 'Bob' : '%%oldOwner%%'
-  const project = props.preview ? 'Invision App' : '%%project%%'
+  const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
+  const actorAvatarUrl = props.preview ? user : '%%actorAvatarUrl%%'
+  const projectTitle = props.preview ? 'Invision App' : '%%projectTitle%%'
   const projectLink = props.preview ? 'https://app.flowmapp.com' : '%%projectLink%%'
 
   return (
     <System preview={props.preview} noImage>
       <Container>
-        <H2>Hi, {newOwner} 👋</H2>
-        <P>
-          {oldOwner} wants to transfer {project} project ownership to you
-        </P>
+        <Card>
+          <ImageBlock>
+            <Image src={actorAvatarUrl} alt="avatar" />
+          </ImageBlock>
 
-        <Button href={projectLink}>Take this project</Button>
+          <TextBlock>
+            <H2>
+              {actorFullName} <Gray>wants to transfer</Gray> {projectTitle}{' '}
+              <Gray>project ownership to you</Gray>
+            </H2>
+          </TextBlock>
 
-        <P>
-          Just wanted you to know,
-          <br />
-          The FlowMapp team
-        </P>
+          <Button wide href={projectLink}>
+            Take this project
+          </Button>
+        </Card>
       </Container>
     </System>
   )

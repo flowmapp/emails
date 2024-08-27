@@ -1,29 +1,36 @@
 import React from 'react'
 
-import Service from '@layouts/Service'
+import System from '@layouts/System'
 
-import { Button, Container, P } from '@core'
+import { Button, Card, Container, Gray, H2, Image, ImageBlock, TextBlock } from '@core'
+
+import user from '@static/common/user.png'
 
 export default function main(props) {
-  const owner = props.preview ? 'Bob' : '%%owner%%'
-  const project = props.preview ? 'Invision App' : '%%project%%'
+  const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
+  const actorAvatarUrl = props.preview ? user : '%%actorAvatarUrl%%'
+  const projectTitle = props.preview ? 'Invision App' : '%%projectTitle%%'
   const projectLink = props.preview ? 'https://app.flowmapp.com' : '%%projectLink%%'
 
   return (
-    <Service preview={props.preview} noImage>
+    <System preview={props.preview} noImage>
       <Container>
-        <P>
-          {owner} invited you to collaborate on {project} using FlowMapp.
-        </P>
+        <Card>
+          <ImageBlock>
+            <Image src={actorAvatarUrl} alt="avatar" />
+          </ImageBlock>
 
-        <Button href={projectLink}>Join the Project</Button>
+          <TextBlock>
+            <H2>
+              {actorFullName} <Gray>invited you to collaborate on</Gray> {projectTitle}
+            </H2>
+          </TextBlock>
 
-        <P>
-          Have a nice day,
-          <br />
-          The FlowMapp team
-        </P>
+          <Button wide href={projectLink}>
+            Join the Project
+          </Button>
+        </Card>
       </Container>
-    </Service>
+    </System>
   )
 }

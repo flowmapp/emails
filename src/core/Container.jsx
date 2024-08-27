@@ -1,11 +1,9 @@
 import React from 'react'
 
-import { contentPadding } from '@const'
-
 const s = {
   hero: {
-    paddingLeft: contentPadding,
-    paddingRight: contentPadding,
+    paddingLeft: 4,
+    paddingRight: 4,
   },
 }
 

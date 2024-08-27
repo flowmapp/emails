@@ -2,7 +2,7 @@ import React from 'react'
 
 import Marketing from '@layouts/Marketing'
 
-import { A, B, Button, Chip, Container, H2, Image, P } from '@core'
+import { A, B, Button, Card, Chip, Container, H2, Image, P } from '@core'
 
 import content from '@static/regPlus1/content.png'
 import sitemap from '@static/regPlus1/sitemap.png'
@@ -67,34 +67,36 @@ export default function main(props) {
   return (
     <Marketing preview={props.preview}>
       <Container>
-        <H2>
-          Ready. Steady.&nbsp;<B>Flow</B>
-        </H2>
-        <P>
-          90% of our users understand how to use FlowMapp tools within
-          <br />
-          the first 60 seconds. We make it powerful, effective, and simple.
-          <br />
-          Just the way you love
-        </P>
-        <div style={s.chips}>{chipRows.map(renderChipRow)}</div>
-        <div style={s.images}>
-          <A style={s.image} href="/personal">
-            <Image src={sitemap} alt="create sitemap" />
-          </A>
-          <A style={s.image} href="/personal">
-            <Image src={userflow} alt="create userflow" />
-          </A>
-          <A style={s.image} href="/personal">
-            <Image src={wireframes} alt="create wireframes" />
-          </A>
-          <A style={s.image} href="/personal">
-            <Image src={content} alt="create content" />
-          </A>
-        </div>
-        <Button style={s.getStarted} href="/personal">
-          Get started
-        </Button>
+        <Card>
+          <H2>
+            Ready. Steady.&nbsp;<B>Flow</B>
+          </H2>
+          <P>
+            90% of our users understand how to use FlowMapp tools within
+            <br />
+            the first 60 seconds. We make it powerful, effective, and simple.
+            <br />
+            Just the way you love
+          </P>
+          <div style={s.chips}>{chipRows.map(renderChipRow)}</div>
+          <div style={s.images}>
+            <A style={s.image} href="/personal">
+              <Image src={sitemap} alt="create sitemap" />
+            </A>
+            <A style={s.image} href="/personal">
+              <Image src={userflow} alt="create userflow" />
+            </A>
+            <A style={s.image} href="/personal">
+              <Image src={wireframes} alt="create wireframes" />
+            </A>
+            <A style={s.image} href="/personal">
+              <Image src={content} alt="create content" />
+            </A>
+          </div>
+          <Button wide style={s.getStarted} href="/personal">
+            Get started
+          </Button>
+        </Card>
       </Container>
     </Marketing>
   )

@@ -5,12 +5,13 @@ import { fontDefaults } from '@const'
 const s = {
   h2: {
     ...fontDefaults,
-    fontWeight: 900,
-    fontSize: 42,
-    lineHeight: '48px',
+    fontWeight: 600,
+    fontSize: 32,
+    lineHeight: '40px',
     margin: 0,
-    marginBottom: 20,
+    marginBottom: 16,
     textAlign: 'center',
+    letterSpacing: '-0.04em',
   },
 }
 

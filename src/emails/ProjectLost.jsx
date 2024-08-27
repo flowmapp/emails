@@ -2,26 +2,34 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { Container, H2, P } from '@core'
+import { Button, Card, Container, Gray, H2, Image, ImageBlock, TextBlock } from '@core'
+
+import user from '@static/common/user.png'
 
 export default function main(props) {
-  const owner = props.preview ? 'John' : '%%owner%%'
-  const by = props.preview ? 'Bob' : '%%by%%'
-  const project = props.preview ? 'Invision App' : '%%project%%'
+  const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
+  const actorAvatarUrl = props.preview ? user : '%%actorAvatarUrl%%'
+  const projectTitle = props.preview ? 'Invision App' : '%%projectTitle%%'
 
   return (
     <System preview={props.preview} noImage>
       <Container>
-        <H2>Hi, {owner} 👋</H2>
-        <P>
-          {by} has transferred your project {project} into another workspace
-        </P>
+        <Card>
+          <ImageBlock>
+            <Image src={actorAvatarUrl} alt="avatar" />
+          </ImageBlock>
 
-        <P>
-          Just wanted you to know,
-          <br />
-          The FlowMapp team
-        </P>
+          <TextBlock>
+            <H2>
+              {actorFullName} <Gray>has transferred your project</Gray> {projectTitle}{' '}
+              <Gray>into another workspace</Gray>
+            </H2>
+          </TextBlock>
+
+          <Button wide href="https://app.flowmapp.com">
+            View in Flowmapp
+          </Button>
+        </Card>
       </Container>
     </System>
   )
