@@ -20,7 +20,7 @@ export default function main(props) {
           </TextBlock>
 
           <Button wide href="https://app.flowmapp.com">
-            Go to flowmapp
+            Go to Flowmapp
           </Button>
         </Card>
 
@@ -28,13 +28,13 @@ export default function main(props) {
           <TextBlock>
             <H2>Didn&lsquo;t change the password?</H2>
             <P>
-              Contact FlowMapp Support so we can make sure no one else is trying to access your
+              Contact Flowmapp support so we can make sure no one else is trying to access your
               account.
             </P>
           </TextBlock>
 
           <Button wide secondary href="/upgrade">
-            Contact FlowMapp Support
+            Contact Flowmapp support
           </Button>
         </Card>
       </Container>

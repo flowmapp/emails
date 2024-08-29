@@ -14,7 +14,7 @@ export default function main(props) {
         <Card>
           <TextBlock>
             <H2>
-              {actorFullName} <Gray>sent you a FlowMapp share link!</Gray>
+              {actorFullName} <Gray>sent you a Flowmapp share link!</Gray>
             </H2>
           </TextBlock>
 

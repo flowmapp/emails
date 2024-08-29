@@ -52,6 +52,9 @@ export default function main(props) {
       width: 36,
       marginRight: 28,
     },
+    noMargin: {
+      marginRight: 0,
+    },
     footerLinks: {
       display: 'table',
     },
@@ -64,10 +67,8 @@ export default function main(props) {
     },
   }
 
-  const unsubscribeLink = props.preview ? '/unsubscribe' : '%%unsubscribeLink%%'
-
-  const renderSocial = ({ href, img, alt }) => (
-    <A style={s.social} href={href}>
+  const renderSocial = ({ href, img, alt, noMargin }) => (
+    <A style={{ ...s.social, ...(noMargin ? s.noMargin : {}) }} href={href}>
       <Image src={`${img}?v=2`} alt={alt} />
     </A>
   )
@@ -101,6 +102,7 @@ export default function main(props) {
                 href: 'https://instagram.com/flowmapp',
                 img: instagram,
                 alt: 'instagram',
+                noMargin: true,
               })}
             </div>
             <div style={s.footer}>

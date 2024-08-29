@@ -18,7 +18,7 @@ export default function main(props) {
             <P>Click the button below to reset your password.</P>
           </TextBlock>
 
-          <Button wide href={link}>Reset Password</Button>
+          <Button wide href={link}>Reset password</Button>
         </Card>
       </Container>
     </System>
