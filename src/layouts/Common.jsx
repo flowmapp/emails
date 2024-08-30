@@ -69,7 +69,7 @@ export default function main(props) {
 
   const renderSocial = ({ href, img, alt, noMargin }) => (
     <A style={{ ...s.social, ...(noMargin ? s.noMargin : {}) }} href={href}>
-      <Image src={`${img}?v=2`} alt={alt} />
+      <Image src={`${img}?v=3`} alt={alt} />
     </A>
   )
 
@@ -82,7 +82,7 @@ export default function main(props) {
               style={s.logoLink}
               href="https://www.flowmapp.com/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
             >
-              <Image style={s.logo} src={`${logo}?v=1`} alt="logo" />
+              <Image style={s.logo} src={`${logo}?v=2`} alt="logo" />
             </A>
             <div style={{ ...s.content, ...props.style }}>{props.children}</div>
             <div style={s.socials}>
