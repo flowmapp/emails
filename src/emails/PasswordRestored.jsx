@@ -2,7 +2,7 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { Button, Card, Container, H2, ImageBlock, P, TextBlock } from '@core'
+import { Button, Card, Container, H1, ImageBlock, P, TextBlock } from '@core'
 
 export default function main(props) {
   const link = props.link ? 'http://localhost:3000' : '%%link%%'
@@ -14,7 +14,7 @@ export default function main(props) {
           <ImageBlock>🤔</ImageBlock>
 
           <TextBlock>
-            <H2>Forgot your password?</H2>
+            <H1>Forgot your password?</H1>
             <P>Click the button below to reset your password.</P>
           </TextBlock>
 

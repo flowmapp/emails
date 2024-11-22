@@ -16,6 +16,7 @@ const s = {
     fontWeight: 600,
     float: 'none',
     lineHeight: '26px',
+    textAlign: 'center',
   },
   secondary: {
     color: colors.black,

@@ -4,7 +4,7 @@ import Marketing from '@layouts/Marketing'
 
 import { contentPadding } from '@const'
 
-import { B, BInverted, Button, Card, Container, H2, P } from '@core'
+import { B, BInverted, Button, Card, Container, H1, P } from '@core'
 
 import Testimonial from '@components/Testimonial'
 
@@ -56,9 +56,9 @@ export default function main(props) {
       <Card>
         <div style={s.headerWrapper}>
           <div style={s.header}>
-            <H2 style={s.alignLeft}>
+            <H1 style={s.alignLeft}>
               Real users. Real&nbsp;<BInverted style={s.stories}>stories</BInverted>
-            </H2>
+            </H1>
             <P style={s.alignLeft}>
               Real stories from teams and users on how the FlowMapp improved
               <br />

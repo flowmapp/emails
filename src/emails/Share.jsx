@@ -2,7 +2,7 @@ import React from 'react'
 
 import Service from '@layouts/Service'
 
-import { Button, Card, Container, Gray, H2, TextBlock } from '@core'
+import { Button, Card, Container, Gray, H1, TextBlock } from '@core'
 
 export default function main(props) {
   const actorFullName = props.preview ? 'Andrey Severin' : '%%actorFullName%%'
@@ -13,9 +13,9 @@ export default function main(props) {
       <Container>
         <Card>
           <TextBlock>
-            <H2>
+            <H1>
               {actorFullName} <Gray>sent you a Flowmapp share link!</Gray>
-            </H2>
+            </H1>
           </TextBlock>
 
           <Button wide href={link}>

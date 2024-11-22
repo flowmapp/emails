@@ -2,7 +2,7 @@ import React from 'react'
 
 import Marketing from '@layouts/Marketing'
 
-import { A, Button, Card, Container, H2, Image, P } from '@core'
+import { A, Button, Card, Container, H1, Image, P } from '@core'
 
 import video from '@static/regPlus0/video.jpg'
 
@@ -19,7 +19,7 @@ export default function main(props) {
     <Marketing preview={props.preview}>
       <Container>
         <Card>
-          <H2>Give five, {name} 👋</H2>
+          <H1>Give five, {name} 👋</H1>
           <P>
             Meet the superpower and smart FlowMapp tools.
             <br />
@@ -32,7 +32,7 @@ export default function main(props) {
         <br />
 
         <Card>
-          <H2>FlowMapp in 2 minutes</H2>
+          <H1>FlowMapp in 2 minutes</H1>
           <A
             style={s.video}
             href="https://help.flowmapp.com/help/getting-started/?utm_source=email&utm_medium=email&utm_campaign=%%utmCampaign%%"
