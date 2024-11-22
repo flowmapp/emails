@@ -2,7 +2,7 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { Button, Card, Container, Gray, H2, Image, ImageBlock, TextBlock } from '@core'
+import { Button, Card, Container, Gray, H1, Image, ImageBlock, TextBlock } from '@core'
 
 import user from '@static/common/user.png'
 
@@ -21,10 +21,10 @@ export default function main(props) {
           </ImageBlock>
 
           <TextBlock>
-            <H2>
+            <H1>
               {actorFullName} <Gray>wants to transfer</Gray> {projectTitle}{' '}
               <Gray>project ownership to you</Gray>
-            </H2>
+            </H1>
           </TextBlock>
 
           <Button wide href={projectLink}>

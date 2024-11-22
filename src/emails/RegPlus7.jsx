@@ -4,7 +4,7 @@ import Marketing from '@layouts/Marketing'
 
 import { colors } from '@const'
 
-import { B, Button, Card, Container, H2, Span } from '@core'
+import { B, Button, Card, Container, H1, Span } from '@core'
 
 const s = {
   main: {
@@ -57,14 +57,14 @@ export default function main(props) {
     <Marketing preview={props.preview} style={s.main}>
       <Card>
         <Container>
-          <H2 style={s.heading}>
+          <H1 style={s.heading}>
             <i>
               Upgrade your planning skills,&nbsp;
               <B style={s.span}>
                 increase profits and just enjoy a limited 15% discount on FlowMapp PRO
               </B>
             </i>
-          </H2>
+          </H1>
           <div style={s.promoWrapper}>
             <Span style={s.title}>Your promo code</Span>
             <div style={s.promo}>

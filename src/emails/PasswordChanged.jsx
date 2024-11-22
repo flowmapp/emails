@@ -2,7 +2,7 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { Button, Card, Container, Gray, H2, ImageBlock, P, TextBlock } from '@core'
+import { Button, Card, Container, Gray, H1, ImageBlock, P, TextBlock } from '@core'
 
 export default function main(props) {
   const email = props.preview ? 'john@flowmapp.com' : '%%email%%'
@@ -14,9 +14,9 @@ export default function main(props) {
           <ImageBlock>🔒</ImageBlock>
 
           <TextBlock>
-            <H2>
+            <H1>
               <Gray>The password for</Gray> {email} <Gray>has been successfully changed.</Gray>
-            </H2>
+            </H1>
           </TextBlock>
 
           <Button wide href="https://app.flowmapp.com">
@@ -26,7 +26,7 @@ export default function main(props) {
 
         <Card>
           <TextBlock>
-            <H2>Didn&lsquo;t change the password?</H2>
+            <H1>Didn&lsquo;t change the password?</H1>
             <P>
               Contact Flowmapp support so we can make sure no one else is trying to access your
               account.

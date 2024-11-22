@@ -11,7 +11,6 @@ const s = {
     fontWeight: 300,
     lineHeight: '24px',
     letterSpacing: 0,
-    textAlign: 'center',
   },
 }
 

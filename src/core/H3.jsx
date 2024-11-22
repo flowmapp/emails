@@ -3,11 +3,11 @@ import React from 'react'
 import { fontDefaults } from '@const'
 
 const s = {
-  h2: {
+  h3: {
     ...fontDefaults,
     fontWeight: 600,
-    fontSize: 24,
-    lineHeight: '32px',
+    fontSize: 18,
+    lineHeight: '26px',
     margin: 0,
     marginBottom: 8,
     letterSpacing: '-0.04em',
@@ -15,5 +15,5 @@ const s = {
 }
 
 export default function main(props) {
-  return <h2 style={{ ...s.h2, ...props.style }}>{props.children}</h2>
+  return <h3 style={{ ...s.h3, ...props.style }}>{props.children}</h3>
 }

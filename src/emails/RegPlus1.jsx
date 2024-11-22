@@ -2,7 +2,7 @@ import React from 'react'
 
 import Marketing from '@layouts/Marketing'
 
-import { A, B, Button, Card, Chip, Container, H2, Image, P } from '@core'
+import { A, B, Button, Card, ChipOld, Container, H1, Image, P } from '@core'
 
 import content from '@static/regPlus1/content.png'
 import sitemap from '@static/regPlus1/sitemap.png'
@@ -52,14 +52,14 @@ export default function main(props) {
   const renderChipRow = (chipRow) => (
     <div key={Math.random()} style={s.chipRow}>
       {chipRow.map((chip) => (
-        <Chip key={chip.text}>
+        <ChipOld key={chip.text}>
           <B>
             <A style={s.chipLink} href={chip.href}>
               {chip.linkText}&nbsp;
             </A>
           </B>
           {chip.text}
-        </Chip>
+        </ChipOld>
       ))}
     </div>
   )
@@ -68,9 +68,9 @@ export default function main(props) {
     <Marketing preview={props.preview}>
       <Container>
         <Card>
-          <H2>
+          <H1>
             Ready. Steady.&nbsp;<B>Flow</B>
-          </H2>
+          </H1>
           <P>
             90% of our users understand how to use FlowMapp tools within
             <br />

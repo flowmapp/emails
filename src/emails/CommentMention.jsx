@@ -2,7 +2,7 @@ import React from 'react'
 
 import Service from '@layouts/Service'
 
-import { Button, Card, Container, Gray, H2, Image, ImageBlock, Preview, TextBlock } from '@core'
+import { Button, Card, Container, Gray, H1, Image, ImageBlock, Preview, TextBlock } from '@core'
 
 import user from '@static/common/user.png'
 
@@ -22,11 +22,11 @@ export default function main(props) {
           </ImageBlock>
 
           <TextBlock>
-            <H2>
+            <H1>
               {actorFullName}
               <Gray> mentioned you in </Gray>
               {linkTitle}
-            </H2>
+            </H1>
           </TextBlock>
 
           <Preview>{html}</Preview>

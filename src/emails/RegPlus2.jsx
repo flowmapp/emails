@@ -4,7 +4,7 @@ import Marketing from '@layouts/Marketing'
 
 import { contentPadding } from '@const'
 
-import { BInverted, Button, Card, Container, H2, P } from '@core'
+import { BInverted, Button, Card, Container, H1, P } from '@core'
 
 import CardComponent from '@components/Card'
 import Checklist from '@components/Checklist'
@@ -52,13 +52,13 @@ export default function main(props) {
     <Marketing preview={props.preview} style={s.main}>
       <Card>
         <div style={s.header}>
-          <H2 style={s.alignLeft}>
+          <H1 style={s.alignLeft}>
             Follow 5 easy steps and get a&nbsp;<BInverted style={s.stories}>bonus!</BInverted>
-          </H2>
+          </H1>
         </div>
         <Container>
           <CardComponent style={s.card}>
-            <H2 style={s.cardTitle}>Get 15% discount!</H2>
+            <H1 style={s.cardTitle}>Get 15% discount!</H1>
             <P style={s.cardText}>
               Hi, Jedi. This is the beginning of your power path towards amazing UX, UI and IA
               planning. Follow the steps to achieve the goal

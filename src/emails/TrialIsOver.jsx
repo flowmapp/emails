@@ -2,7 +2,7 @@ import React from 'react'
 
 import System from '@layouts/System'
 
-import { A, Button, Card, Container, H2, ImageBlock, P, TextBlock } from '@core'
+import { A, Button, Card, Container, H1, ImageBlock, P, TextBlock } from '@core'
 
 export default function main(props) {
   return (
@@ -12,7 +12,7 @@ export default function main(props) {
           <ImageBlock>🥺</ImageBlock>
 
           <TextBlock>
-            <H2>Trial is over</H2>
+            <H1>Trial is over</H1>
             <P>
               We hope you&lsquo;ve enjoyed the experience — take the next step in building your
               projects. Our UX tools are here to help you.
@@ -36,7 +36,7 @@ export default function main(props) {
 
         <Card>
           <TextBlock>
-            <H2>Have questions about upgrading?</H2>
+            <H1>Have questions about upgrading?</H1>
             <P>
               Let us know if there&lsquo;s anything we can do and you need an extra week to explore
               more.

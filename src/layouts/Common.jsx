@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { A, Image, Span } from '@core'
+import { A, Image } from '@core'
 
 import instagram from '@static/common/instagram.png'
 import linkedin from '@static/common/linkedin.png'
@@ -9,7 +9,7 @@ import medium from '@static/common/medium.png'
 import twitter from '@static/common/twitter.png'
 import youTube from '@static/common/youtube.png'
 
-import { colors, contentPadding, fontDefaults } from '@const'
+import { colors, fontDefaults } from '@const'
 
 export const commonFooterLinks = [
   {
@@ -36,8 +36,8 @@ export default function main(props) {
       float: 'none',
     },
     logo: {
-      width: 122,
-      marginBottom: 32,
+      width: 82,
+      marginBottom: 40,
       boxSizing: 'content-box',
     },
     content: {
