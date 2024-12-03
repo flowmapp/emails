@@ -12,13 +12,15 @@ import userflow from '@static/onboarding4/userflow.jpg'
 import userflow2 from '@static/onboarding4/userflow2.jpg'
 
 const s = {
+  blackBlockWrapper: {
+    width: '33%',
+    display: 'inline-block',
+    paddingRight: 6,
+  },
   blackBlock: {
     backgroundColor: colors.black,
     borderRadius: 16,
-    marginRight: 6,
-    width: 174,
     padding: 16,
-    display: 'inline-block',
     marginBottom: 32,
   },
   blackBlockHeader: {
@@ -59,17 +61,25 @@ export default function main(props) {
 
           <H3>3 WHY that block clients:</H3>
           <br />
-          <div style={s.blackBlock}>
-            <H1 style={s.blackBlockHeader}>01</H1>
-            <H3 style={s.blackBlockText}>Why is this so expensive?</H3>
-          </div>
-          <div style={s.blackBlock}>
-            <H1 style={s.blackBlockHeader}>02</H1>
-            <H3 style={s.blackBlockText}>Why does it take so long?</H3>
-          </div>
-          <div style={{ ...s.blackBlock, marginRight: 0 }}>
-            <H1 style={s.blackBlockHeader}>03</H1>
-            <H3 style={s.blackBlockText}>Why should I trust you?</H3>
+          <div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>01</H1>
+                <H3 style={s.blackBlockText}>Why is this so expensive?</H3>
+              </div>
+            </div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>02</H1>
+                <H3 style={s.blackBlockText}>Why does it take so long?</H3>
+              </div>
+            </div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>03</H1>
+                <H3 style={s.blackBlockText}>Why should I trust you?</H3>
+              </div>
+            </div>
           </div>
           <H3>
             Solution:
@@ -80,8 +90,8 @@ export default function main(props) {
           <br />
           <Image borderRadius={16} src={userflow} alt="userflow" style={s.image} />
           <Tip>
-            💡 Image: Even a simple registration can demand significant resources. Use the user flow
-            tool to map it out and demonstrate to the client.
+            💡 Even a simple registration can demand significant resources. Use the user flow tool
+            to map it out and demonstrate to the client.
           </Tip>
 
           <H3>Focus on UX 👨‍💻</H3>

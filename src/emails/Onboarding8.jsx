@@ -10,13 +10,15 @@ import collaboration from '@static/onboarding8/collaboration.jpg'
 import progress from '@static/onboarding8/progress.jpg'
 
 const s = {
+  blackBlockWrapper: {
+    width: '33%',
+    display: 'inline-block',
+    paddingRight: 6,
+  },
   blackBlock: {
     backgroundColor: colors.black,
     borderRadius: 16,
-    marginRight: 6,
-    width: 174,
     padding: 16,
-    display: 'inline-block',
     marginBottom: 32,
   },
   blackBlockHeader: {
@@ -73,21 +75,29 @@ export default function main(props) {
 
           <H3>The Pareto Principle in Action:</H3>
           <br />
-          <div style={s.blackBlock}>
-            <H1 style={s.blackBlockHeader}>01</H1>
-            <H3 style={s.blackBlockText}>
-              80% of offers go to 20% of
-              <br />
-              agencies
-            </H3>
-          </div>
-          <div style={s.blackBlock}>
-            <H1 style={s.blackBlockHeader}>02</H1>
-            <H3 style={s.blackBlockText}>20% of effort delivers 80% of the results</H3>
-          </div>
-          <div style={{ ...s.blackBlock, marginRight: 0 }}>
-            <H1 style={s.blackBlockHeader}>03</H1>
-            <H3 style={s.blackBlockText}>80% of clients need 20% of website types</H3>
+          <div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>01</H1>
+                <H3 style={s.blackBlockText}>
+                  80% of offers go to 20% of
+                  <br />
+                  agencies
+                </H3>
+              </div>
+            </div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>02</H1>
+                <H3 style={s.blackBlockText}>20% of effort delivers 80% of the results</H3>
+              </div>
+            </div>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>03</H1>
+                <H3 style={s.blackBlockText}>80% of clients need 20% of website types</H3>
+              </div>
+            </div>
           </div>
 
           <H2 style={{ color: colors.darkGray }}>

@@ -14,6 +14,7 @@ import wireframes from '@static/onboarding6/wireframes.jpg'
 
 const s = {
   image: {
+    width: 260,
     marginBottom: 32,
   },
 }

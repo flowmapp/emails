@@ -8,5 +8,5 @@ const s = {
 
 export default function main(props) {
   const { borderRadius, style, ...rest } = props
-  return <img style={{ ...s.img, ...style, borderRadius }} {...rest} src={`${props.src}?v=5`} />
+  return <img style={{ ...s.img, ...style, borderRadius }} {...rest} src={`${props.src}?v=6`} />
 }

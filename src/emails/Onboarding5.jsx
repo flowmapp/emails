@@ -19,13 +19,15 @@ import tileAdd from '@static/onboarding5/tileAdd.png'
 import wireframes from '@static/onboarding5/wireframes.jpg'
 
 const s = {
+  blackBlockWrapper: {
+    width: '33%',
+    display: 'inline-block',
+    paddingRight: 6,
+  },
   blackBlock: {
     backgroundColor: colors.black,
     borderRadius: 16,
-    marginRight: 6,
-    width: 174,
     padding: 16,
-    display: 'inline-block',
     marginBottom: 32,
   },
   blackBlockHeader: {
@@ -74,25 +76,31 @@ export default function main(props) {
           <H3>Why don&apos;t more agencies include wireframes in their proposals?</H3>
           <br />
           <div>
-            <div style={s.blackBlock}>
-              <H1 style={s.blackBlockHeader}>01</H1>
-              <H3 style={s.blackBlockText}>Lack of resources for a dedicated designer</H3>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>01</H1>
+                <H3 style={s.blackBlockText}>Lack of resources for a dedicated designer</H3>
+              </div>
             </div>
-            <div style={s.blackBlock}>
-              <H1 style={s.blackBlockHeader}>02</H1>
-              <H3 style={s.blackBlockText}>
-                High cost of development
-                <br />
-                &nbsp;
-              </H3>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>02</H1>
+                <H3 style={s.blackBlockText}>
+                  High cost of development
+                  <br />
+                  &nbsp;
+                </H3>
+              </div>
             </div>
-            <div style={{ ...s.blackBlock, marginRight: 0 }}>
-              <H1 style={s.blackBlockHeader}>03</H1>
-              <H3 style={s.blackBlockText}>
-                Time-consuming process
-                <br />
-                &nbsp;
-              </H3>
+            <div style={s.blackBlockWrapper}>
+              <div style={s.blackBlock}>
+                <H1 style={s.blackBlockHeader}>03</H1>
+                <H3 style={s.blackBlockText}>
+                  Time-consuming process
+                  <br />
+                  &nbsp;
+                </H3>
+              </div>
             </div>
           </div>
           <H2>How to optimize the process:</H2>
@@ -126,9 +134,8 @@ export default function main(props) {
           <br />
           <Image borderRadius={16} src={template} alt="template" style={s.image} />
           <Tip>
-            💡 Image description: Speed up the proposal process even further by using templates. The
-            better your sales offers, and the more clients you reach, the better your conversion
-            rate and revenue.
+            💡 Speed up the proposal process even further by using templates. The better your sales
+            offers, and the more clients you reach, the better your conversion rate and revenue.
           </Tip>
           <br />
 
@@ -150,9 +157,9 @@ export default function main(props) {
           <br />
           <Image borderRadius={16} src={figma} alt="export to figma" style={s.image} />
           <Tip>
-            💡 Tip: Use Flowmapp AI to generate a sitemap with wireframes for each page. Fill in
-            project details, make buttons clickable, and spend just one hour refining it. Send this
-            to the client — it&apos;ll make a lasting impression.
+            💡 Use Flowmapp AI to generate a sitemap with wireframes for each page. Fill in project
+            details, make buttons clickable, and spend just one hour refining it. Send this to the
+            client — it&apos;ll make a lasting impression.
           </Tip>
           <br />
 

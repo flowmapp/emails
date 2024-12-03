@@ -18,7 +18,7 @@ const s = {
     marginBottom: 32,
   },
   key1Image: {
-    width: 264,
+    width: 260,
     marginBottom: 32,
   },
   stars: {
@@ -53,8 +53,8 @@ export default function main(props) {
           <Image src={stars} alt="stars" style={s.stars} />
           <H3>Key Principle 1 — Сlient buys with their eyes</H3>
           <P>
-            Don&apos;t just tell - show! Visualize the project from the very first step to demonstrate
-            your interest, expertise, and commitment to thorough planning.
+            Don&apos;t just tell - show! Visualize the project from the very first step to
+            demonstrate your interest, expertise, and commitment to thorough planning.
           </P>
           <br />
           <Image
@@ -70,8 +70,8 @@ export default function main(props) {
             style={{ ...s.image, ...s.key1Image }}
           />
           <Tip>
-            💡 Tip: Use Flowmapp AI to quickly create sitemaps with ready-made page prototypes,
-            building a visual structure in minimal time.
+            💡 Use Flowmapp AI to quickly create sitemaps with ready-made page prototypes, building
+            a visual structure in minimal time.
           </Tip>
 
           <Image src={stars} alt="stars" style={s.stars} />
@@ -79,8 +79,8 @@ export default function main(props) {
           <P>
             Present a well-crafted proposal: include visual structure, an overview, comments, mood
             boards, and a commercial offer. Clients want to see what they&apos;re investing in. Keep
-            it concise-deliver interactive, visual proposals with Flowmapp&apos;s visual sitemap tool,
-            adding notes and mood boards to each page.
+            it concise-deliver interactive, visual proposals with Flowmapp&apos;s visual sitemap
+            tool, adding notes and mood boards to each page.
           </P>
           <br />
           <Image borderRadius={16} src={sitemap} alt="sitemap" style={s.image} />
@@ -105,8 +105,8 @@ export default function main(props) {
           <br />
 
           <H2>
-            In the next email, we&apos;ll show you how to make UX your unique advantage without using
-            extensive resources.
+            In the next email, we&apos;ll show you how to make UX your unique advantage without
+            using extensive resources.
           </H2>
           <br />
           <Image borderRadius={16} src={progress} alt="progress" style={s.image} />
