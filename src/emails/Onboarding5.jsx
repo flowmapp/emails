@@ -25,8 +25,8 @@ const s = {
     borderRadius: 16,
     padding: 16,
     marginBottom: 32,
-    marginRight: 6,
-    width: 170,
+    marginRight: 8,
+    width: 168,
   },
   blackBlockHeader: {
     color: colors.darkGray,
@@ -85,7 +85,7 @@ export default function main(props) {
               &nbsp;
             </H3>
           </div>
-          <div style={s.blackBlock}>
+          <div style={{ ...s.blackBlock, marginRight: 0 }}>
             <H1 style={s.blackBlockHeader}>03</H1>
             <H3 style={s.blackBlockText}>
               Time-consuming process
