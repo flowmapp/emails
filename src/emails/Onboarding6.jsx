@@ -14,8 +14,10 @@ import wireframes from '@static/onboarding6/wireframes.jpg'
 
 const s = {
   image: {
-    width: 260,
     marginBottom: 32,
+  },
+  inlineImage: {
+    width: 260,
   },
 }
 
@@ -44,9 +46,9 @@ export default function main(props) {
             borderRadius={16}
             src={badExample}
             alt="bad example"
-            style={{ ...s.image, marginRight: 6 }}
+            style={{ ...s.image, ...s.inlineImage, marginRight: 6 }}
           />
-          <Image borderRadius={16} src={goodExample} alt="good example" style={s.image} />
+          <Image borderRadius={16} src={goodExample} alt="good example" style={{ ...s.image, ...s.inlineImage }} />
 
           <H2>Why does it matter?</H2>
           <br />
