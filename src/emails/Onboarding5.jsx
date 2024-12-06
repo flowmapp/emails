@@ -19,16 +19,14 @@ import tileAdd from '@static/onboarding5/tileAdd.png'
 import wireframes from '@static/onboarding5/wireframes.jpg'
 
 const s = {
-  blackBlockWrapper: {
-    width: '33%',
-    display: 'inline-block',
-    paddingRight: 6,
-  },
   blackBlock: {
+    display: 'inline-block',
     backgroundColor: colors.black,
     borderRadius: 16,
     padding: 16,
     marginBottom: 32,
+    marginRight: 6,
+    width: 170,
   },
   blackBlockHeader: {
     color: colors.darkGray,
@@ -75,33 +73,25 @@ export default function main(props) {
 
           <H3>Why don&apos;t more agencies include wireframes in their proposals?</H3>
           <br />
-          <div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>01</H1>
-                <H3 style={s.blackBlockText}>Lack of resources for a dedicated designer</H3>
-              </div>
-            </div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>02</H1>
-                <H3 style={s.blackBlockText}>
-                  High cost of development
-                  <br />
-                  &nbsp;
-                </H3>
-              </div>
-            </div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>03</H1>
-                <H3 style={s.blackBlockText}>
-                  Time-consuming process
-                  <br />
-                  &nbsp;
-                </H3>
-              </div>
-            </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>01</H1>
+            <H3 style={s.blackBlockText}>Lack of resources for a dedicated designer</H3>
+          </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>02</H1>
+            <H3 style={s.blackBlockText}>
+              High cost of development
+              <br />
+              &nbsp;
+            </H3>
+          </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>03</H1>
+            <H3 style={s.blackBlockText}>
+              Time-consuming process
+              <br />
+              &nbsp;
+            </H3>
           </div>
           <H2>How to optimize the process:</H2>
           <br />

@@ -12,16 +12,14 @@ import userflow from '@static/onboarding4/userflow.jpg'
 import userflow2 from '@static/onboarding4/userflow2.jpg'
 
 const s = {
-  blackBlockWrapper: {
-    width: '33%',
-    display: 'inline-block',
-    paddingRight: 6,
-  },
   blackBlock: {
+    display: 'inline-block',
     backgroundColor: colors.black,
     borderRadius: 16,
     padding: 16,
     marginBottom: 32,
+    marginRight: 6,
+    width: 170,
   },
   blackBlockHeader: {
     color: colors.darkGray,
@@ -61,25 +59,17 @@ export default function main(props) {
 
           <H3>3 WHY that block clients:</H3>
           <br />
-          <div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>01</H1>
-                <H3 style={s.blackBlockText}>Why is this so expensive?</H3>
-              </div>
-            </div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>02</H1>
-                <H3 style={s.blackBlockText}>Why does it take so long?</H3>
-              </div>
-            </div>
-            <div style={s.blackBlockWrapper}>
-              <div style={s.blackBlock}>
-                <H1 style={s.blackBlockHeader}>03</H1>
-                <H3 style={s.blackBlockText}>Why should I trust you?</H3>
-              </div>
-            </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>01</H1>
+            <H3 style={s.blackBlockText}>Why is this so expensive?</H3>
+          </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>02</H1>
+            <H3 style={s.blackBlockText}>Why does it take so long?</H3>
+          </div>
+          <div style={s.blackBlock}>
+            <H1 style={s.blackBlockHeader}>03</H1>
+            <H3 style={s.blackBlockText}>Why should I trust you?</H3>
           </div>
           <H3>
             Solution:
