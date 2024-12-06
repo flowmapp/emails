@@ -19,7 +19,7 @@ const s = {
     padding: 16,
     marginBottom: 32,
     marginRight: 8,
-    width: 172,
+    width: 168,
   },
   blackBlockHeader: {
     color: colors.darkGray,
